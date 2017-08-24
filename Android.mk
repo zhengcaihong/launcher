@@ -101,8 +101,5 @@ ifneq ($(YUNOS_SUPPORT_MULTIUSERAPPS),yes)
 endif
 
 
-
-
-
 include $(BUILD_MULTI_PREBUILT)
 include $(call all-makefiles-under,$(LOCAL_PATH))
