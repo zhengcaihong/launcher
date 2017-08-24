@@ -16,13 +16,9 @@
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
-
-
-$(shell cp -f $(LOCAL_PATH)/AndroidManifest.xml.nomal $(LOCAL_PATH)/AndroidManifest.xml)
-
 LOCAL_MODULE_TAGS := optional
 
-LOCAL_STATIC_JAVA_LIBRARIES := homeshell_hwdroid android-common android-support-v4 themeicon homeshell_aliyun-aml yunosui hs_locationsdk
+LOCAL_STATIC_JAVA_LIBRARIES := homeshell_hwdroid android-common android-support-v4 themeicon homeshell_aliyun-aml yunosui 
 
 
 
@@ -104,7 +100,7 @@ ifneq ($(YUNOS_SUPPORT_MULTIUSERAPPS),yes)
 	LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES += multi_user:libs/multi_user.jar
 endif
 
-LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES +=  hs_locationsdk:libs/locationsdk.jar
+
 
 
 
