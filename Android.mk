@@ -26,7 +26,7 @@ LOCAL_STATIC_JAVA_LIBRARIES += homeshell_utility
 ifeq ($(PLATFORM_SDK_VERSION),23)
 LOCAL_STATIC_JAVA_LIBRARIES += org.apache.http.legacy
 endif
-# LOCAL_JAVA_LIBRARIES += aliyun-aml
+
 
 LOCAL_PACKAGE_NAME := AliHomeShell
 LOCAL_CERTIFICATE := platform
