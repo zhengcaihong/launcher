@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+* Copyright (C) 2008 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="guide_activate">激活</string>
+    <string name="guide_activate_ok">立刻使用</string>
+    <string name="guide_category">立即归类</string>
+    <string name="activate_yunos_service">激活 YunOS 核心服务</string>
+    <string name="guide_activate_tips_title">由于您的系统版本较老，无法为您提供以下服务：</string>
+    <string name="guide_activate_tips_content">· 搜罗最潮最全的APP\n· 智能的个人语音助理\n· 最新新闻及免费优质小说</string>
+    <string name="guide_activate_tips">是否立即免流量激活系统服务？</string>
+    <string name="activate_count">"0%"</string>
+    <string name="guide_activate_success">激活成功</string>
+    <string name="guide_activate_success_title">系统服务激活成功，请查看对应服务：</string>
+    <string name="guide_activate_success_content">已为你开启新闻服务功能，\n请左滑桌面浏览，已为你安装应用中心、阅读、个人助理、请查看桌面图标。</string>
+    <string name="guide_category_title">归类应用让您找应用更方便</string>
+    <string name="guide_category_tips">是否现在进行归类</string>
+    <string name="activate_giveup_title">系统服务</string>
+    <string name="activate_giveup_content">放弃激活将无法享受YunOS提供的核心系统服务，确认放弃？</string>
+    <string name="activate_giveup">放弃</string>
+
+</resources>

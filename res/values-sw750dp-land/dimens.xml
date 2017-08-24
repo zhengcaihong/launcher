@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+<!-- AppsCustomize -->
+<!-- Workspace -->
+    <dimen name="workspace_page_spacing">50dp</dimen>
+    
+    <!-- xiaodong.lxd added for editmode in landscape orientation -->
+    <dimen name = "workspace_celllayout_margin_bottom">90dp</dimen>
+    <dimen name="menu_layout_width">143dp</dimen>
+    <dimen name = "preview_container_width">142dp</dimen>
+    <dimen name = "preview_container_height">680dp</dimen>
+    <dimen name="em_add_to_folder_width">42dp</dimen>
+    <dimen name="em_add_to_folder_height">42dp</dimen>
+    <dimen name="desktop_indicator_transX">21dp</dimen>
+    <dimen name="preview_indication_length">400dp</dimen>
+    <dimen name="preview_cell_width">160dp</dimen>
+    <dimen name="preview_cell_height">97dip</dimen>
+ 
+    <dimen name="preview_effects_item_text_size">13sp</dimen>
+    <dimen name="preview_effects_item_width">108dp</dimen>
+    <dimen name="preview_effects_item_height">80dp</dimen>
+    <dimen name="preview_effects_item_check_margin_bottom">5dp</dimen>
+    <dimen name="preview_effects_item_check_margin_right">5dp</dimen>
+    <dimen name="preview_effects_item_padding_top">20dp</dimen>
+    <dimen name="preview_effects_item_margin_left">10dp</dimen>
+    <dimen name="preview_effects_item_margin_right">10dp</dimen>
+    <dimen name="preview_effects_item_margin_bottom">10dp</dimen>
+
+    <dimen name="preview_theme_image_width">108dp</dimen>
+    <dimen name="preview_theme_image_height">80dp</dimen>
+    <dimen name="preview_theme_item_check_margin_bottom">0dp</dimen>
+    <dimen name="preview_theme_item_check_margin_right">0dp</dimen>
+    <dimen name="preview_theme_title_size">10sp</dimen>
+    <dimen name="preview_theme_add_image_size">33dp</dimen>
+    <dimen name="preview_theme_add_title_margin_top">6dp</dimen>
+    <dimen name="preview_theme_item_padding_top">20dp</dimen>
+    <dimen name="preview_theme_item_margin_left">10dp</dimen>
+    <dimen name="preview_theme_item_margin_right">10dp</dimen>
+    
+    <dimen name="preview_widget_item_width">116dp</dimen>
+    <dimen name="preview_widget_item_height">108dp</dimen>
+    <dimen name="preview_widget_image_width">110dp</dimen>
+    <dimen name="preview_widget_image_height">75dp</dimen>
+    <dimen name="preview_widget_text_size">13sp</dimen>
+    <dimen name="preview_widget_hint_size">36dp</dimen>
+    <dimen name="preview_widget_item_padding_top">8dp</dimen>
+    <dimen name="preview_widget_item_padding_bottom">8dp</dimen>
+    <dimen name="preview_widget_item_padding_left">0dp</dimen>
+    <dimen name="preview_widget_item_padding_right">0dp</dimen>
+    
+    <dimen name="preview_item_image_width">108dp</dimen>
+    <dimen name="preview_item_image_height">85dp</dimen>
+     <dimen name="preview_item_margin_top">10dp</dimen>
+    <dimen name="preview_item_margin_left">10dp</dimen>
+    <dimen name="preview_item_margin_right">10dp</dimen>
+
+    <dimen name="edit_mode_page_spacing">88dp</dimen>
+    <dimen name="delete_droptarget_padding">340dp</dimen>
+</resources>

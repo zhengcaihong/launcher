@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--
+    @aui_color_test_open@ -->
+    <color name="setting_header_color">#F8F8F8</color>
+    <color name="setting_title_color">#333333</color>
+    <bool name="setting_dark_mode">true</bool>
+<!-- @aui_color_test_open@
+    -->
+    <!-- @aui_color_test_open@
+    <color name="setting_header_color">#fc11ff</color>
+    <color name="setting_title_color">#f1ff0b</color>
+    <bool name="setting_dark_mode">false</bool>
+    @aui_color_test_open@ -->
+</resources>

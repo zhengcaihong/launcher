@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:drawable="@drawable/hw_btn_check_bg_off">
+    </item>
+    <item>
+        <bitmap
+            android:src="@drawable/hw_btn_check_on"
+            android:tint="?attr/hw_colorPrimary" />
+    </item>
+
+</layer-list>

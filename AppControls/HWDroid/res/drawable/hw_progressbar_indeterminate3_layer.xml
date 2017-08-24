@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <bitmap
+            android:src="@drawable/hw_progressbar_indeterminate_bg"
+            android:tint="?attr/hw_colorPrimary" />
+    </item>
+    <item android:drawable="@drawable/hw_progressbar_indeterminate3"/>
+
+</layer-list>

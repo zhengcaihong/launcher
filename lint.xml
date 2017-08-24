@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="DuplicateIncludedIds">
+        <ignore path="res/layout/apps_customize_pane.xml" />
+    </issue>
+    <issue id="InconsistentLayout">
+        <ignore path="res/layout-port/launcher.xml" />
+        <ignore path="res/layout-land/launcher.xml" />
+        <ignore path="res/layout-sw720dp/launcher.xml" />
+    </issue>
+    <issue id="ProtectedPermissions">
+        <ignore path="AndroidManifest.xml" />
+    </issue>
+    <issue id="UseSparseArrays">
+        <ignore path="src/com/aliyun/homeshell/model/LauncherModel.java" />
+    </issue>
+    <issue id="UselessParent">
+        <ignore path="res/layout/dialog_progress_view.xml" />
+    </issue>
+    <issue id="TypographyEllipsis">
+        <ignore path="res/values/strings.xml" />
+        <ignore path="res/values-zh-rCN/strings.xml" />
+        <ignore path="res/values-zh-rTW/strings.xml" />
+    </issue>
+    <issue id="IconDuplicatesConfig">
+        <ignore path="res/drawable-hdpi/alert_dialog_background.9.png" />
+        <ignore path="res/drawable-xhdpi/alert_dialog_background.9.png" />
+        <ignore path="res/drawable-xxhdpi/alert_dialog_background.9.png" />
+    </issue>
+    <issue id="HardcodedDebugMode">
+        <ignore path="AndroidManifest.xml" />
+    </issue>
+</lint>

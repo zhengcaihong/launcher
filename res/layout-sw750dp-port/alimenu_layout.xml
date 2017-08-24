@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    android:visibility="invisible"
+    android:orientation="horizontal"
+    android:paddingLeft="120dp"
+    android:paddingRight="120dp" >
+    <TextView android:id="@+id/menu_item_wallpaper"
+        style="@style/menuTextStyle"
+        android:text="@string/menu_item_wallpapers"
+        android:drawableTop="@drawable/em_menu_wallpaper_bg"
+        />
+
+    <TextView android:id="@+id/menu_item_theme"
+        style="@style/menuTextStyle"
+        android:text="@string/menu_item_themes"
+        android:drawableTop="@drawable/em_menu_theme_bg"
+        />
+    
+    <TextView android:id="@+id/menu_item_effects"
+        style="@style/menuTextStyle"
+        android:text="@string/menu_item_effects"
+        android:drawableTop="@drawable/em_menu_effects_bg"
+        />
+
+    <TextView android:id="@+id/menu_item_sort"
+        style="@style/menuTextStyle"
+        android:text="@string/menu_item_sort"
+        android:drawableTop="@drawable/em_menu_sort_bg"
+        />
+
+    <TextView android:id="@+id/menu_item_widgets"
+        style="@style/menuTextStyle"
+        android:text="@string/menu_item_widget"
+        android:drawableTop="@drawable/em_menu_widget_bg"
+        />
+
+    <TextView android:id="@+id/menu_item_homeshell_setting"
+        style="@style/menuTextStyle"
+        android:text="@string/menu_item_homeshellsetting"
+        android:drawableTop="@drawable/home_settings"
+        />
+</LinearLayout>

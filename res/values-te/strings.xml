@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+* Copyright (C) 2008 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- General -->
+    <skip />
+    <!-- Application name -->
+    <string name="application_name">HomeShell</string>
+    <!-- Accessibility-facing application name -->
+    <!-- Name for all applications running as this uid. -->
+    <!-- Default folder name -->
+    <string name="folder_name"></string>
+    <!-- Title of dialog that appears after user selects Wallpaper from menu -->
+    <string name="chooser_wallpaper">నుంచి వాల్ పేపర్ ఎంచుకోండి</string>
+    <!-- Button label on Wallpaper Gallery screen; user selects this button to set a specific wallpaper -->
+    <!-- Option in "Select wallpaper from" dialog box -->
+    <!-- Displayed when user selects a shortcut for an app that was uninstalled [CHAR_LIMIT=none]-->
+    <string name="activity_not_found">అనువర్తనం ప్రతిష్ఠాపించబడలేదు.</string>
+    <!--  Labels for the tabs in the customize drawer -->
+    <string name="widgets_tab_label">విడ్జెట్లు</string>
+    <!-- AppsCustomize pane -->
+    <!-- Message to tell the user to press and hold on a widget to add it [CHAR_LIMIT=50] -->
+    <string name="long_press_widget_to_add">విడ్జెట్ జోడించడం కొరకు లాంగ్ ప్రెస్ చేయండి</string>
+    <!-- The format string for the dimensions of a widget in the drawer -->
+    <!-- There is a special version of this format string for Farsi -->
+    <string name="widget_dims_format">%1$d \u00d7 %2$d</string>
+    <!-- External-drop widget error string.  This is the error that is shown
+         when you drag and item into the homescreen and it is unable to fit,
+         or an error is encountered. [CHAR_LIMIT=50] -->
+    <!-- External-drop widget pick title.  This is shown as the title of the
+         dialog which allows you to pick which widgets to handle a particular
+         drop if there are multiple choices. [CHAR_LIMIT=35] -->
+    <!-- Folders -->
+    <skip />
+    <!-- Label of Folder name field in Rename folder dialog box -->
+    <!-- Title of dialog box -->
+    <!-- Buttons in Rename folder dialog box -->
+    <!-- Buttons in Rename folder dialog box -->
+    <!-- Shortcuts -->
+    <skip />
+    <!-- Title of dialog box -->
+    <!-- Options in "Add to Home" dialog box; Title of the group containing the list of all apps -->
+    <string name="group_applications">యాప్స్</string>
+    <!-- Options in "Add to Home" dialog box; Title of the group containing the list of all shortcut
+s -->
+    <!-- Options in "Add to Home" dialog box; Title of the group containing the list of all widgets/gadgets -->
+    <!-- Options in "Add to Home" dialog box; Title of the group containing the list of apps that can set the wallpaper-->
+    <string name="group_wallpapers">వాల్‌పేపర్లు</string>
+    <!-- Error message when user has filled all their home screens -->
+    <string name="completely_out_of_space">మీ హోం స్క్రీన్ల మీద ఎటువంటి రూమ్ లేదు.</string>
+    <!-- Error message when user has filled a home screen -->
+    <string name="out_of_space">ఈ హోం స్క్రీన్ల మీద ఎటువంటి రూమ్ లేదు.</string>
+    <!-- Error message when user has filled the hotseat -->
+    <string name="hotseat_out_of_space">హాట్‌సీట్ పై ఎలాంటి రూమ్ లేదు.</string>
+    <!-- Error message when user tries to drop an invalid item on the hotseat -->
+    <!-- Message displayed when a shortcut is created by an external application -->
+    <!-- Message displayed when a shortcut is uninstalled by an external application -->
+    <string name="shortcut_uninstalled">షార్ట్‌కట్ \”%s\”<xliff:g id="name" example="Browser">%s</xliff:g>\” తొలగించబడింది</string>
+    <!-- Message displayed when an external application attemps to create a shortcut that already exists -->
+    <string name="shortcut_duplicate">షార్ట్‌కట్ \”%s\”<xliff:g id="name" example="Browser">%s</xliff:g>\”ఇప్పటికే ఉంది</string>
+
+    <string name="shortcut_updated">షార్ట్‌కట్ \”%s\”<xliff:g id="name" example="Browser">%s</xliff:g>\” నవీకరించబడింది</string>
+    <!-- Title of dialog when user is selecting shortcut to add to homescreen -->
+    <!-- Title of dialog when user is selecting an application to add to homescreen -->
+    <string name="title_select_application">అనువర్తనాన్ని ఎంచుకోండి</string>
+    <!-- All applications label --><string name="all_apps_button_label">యాప్స్</string>
+    <!-- Label for button in all applications label to go back home (to the workspace / desktop)
+         for accessibilty (spoken when the button gets focus). -->
+    <string name="all_apps_home_button_label">హోమ్</string>
+    <!-- Permissions: -->
+    <skip />
+    <!-- Permission short label -->
+    <string name="permlab_install_shortcut">షార్ట్‌కట్‌లను ప్రతిష్ఠాపించు</string>
+    <!-- Permission description -->
+    <string name="permdesc_install_shortcut">వినియోగదారు జోక్యం లేకుండా షార్ట్‌కట్‌లు జోడించేందుకు అనువర్తనాన్ని అనుమతించు.</string>
+    <!-- Permission short label -->
+    <string name="permlab_uninstall_shortcut">షార్ట్‌కట్‌లను అన్‌ఇనస్టల్ చేయి</string>
+    <!-- Permission description -->
+    <string name="permdesc_uninstall_shortcut">వినియోగదారు జోక్యం లేకుండా షార్ట్‌కట్‌లు తొలగించేందుకు అనువర్తనాన్ని అనుమతించు.</string>
+    <!-- Permission short label -->
+    <string name="permlab_read_settings">హోం అమర్పులు మరియు షార్ట్‌కట్‌లను చదవండి</string>
+    <!-- Permission description -->
+    <string name="permdesc_read_settings">హోమ్‌లో అమర్పులు మరియు సత్వరమార్గాలను చదివేందుకు        అనువర్తనాన్ని అనుమతిస్తుంది.</string>
+    <!-- Permission short label -->
+    <string name="permlab_write_settings">సెట్టింగ్‌లు మరియు షార్ట్‌కట్‌‌లు హోమ్‌లో రాయబడతాయి</string>
+    <!-- Permission description -->
+    <string name="permdesc_write_settings">హోమ్‌లో అమర్పులు మరియు సత్వరమార్గాలను మార్చేందుకు   అనువర్తనాన్ని అనుమతిస్తుంది.</string>
+
+    <!-- Widgets: -->
+    <skip />
+    <!-- Text to show user in place of a gadget when we can't display it properly -->
+    <string name="gadget_error_text">సమస్య లోడింగ్ విడ్జెట్</string>
+    <!-- Text to inform the user that they can't uninstall a system application -->
+    <!-- Title of the Android Dreams (screensaver) module -->
+    <!-- Default folder title -->
+    <string name="folder_hint_text">పేరులేని ఫోల్డర్</string>
+    <!-- Accessibility -->
+    <skip />
+    <!-- The format string for Workspace descriptions [CHAR_LIMIT=none] -->
+    <string name="workspace_description_format">హోం స్క్రీన్ %1$d</string>
+    <!-- The format string for default page scroll text [CHAR_LIMIT=none] -->
+    <string name="default_scroll_format">%2$d యొక్క %1$d పేజీ</string>
+    <!-- The format string for Workspace page scroll text [CHAR_LIMIT=none] -->
+    <string name="workspace_scroll_format">%2$d యొక్క %1$d  హోం స్క్రీన్</string>
+    <!-- The format string for AppsCustomize Apps page scroll text [CHAR_LIMIT=none] -->
+    <string name="apps_customize_apps_scroll_format">%2$d యొక్క %1$d అనువర్తన పేజీ</string>
+    <!-- The format string for AppsCustomize Apps page scroll text [CHAR_LIMIT=none] -->
+    <string name="apps_customize_widgets_scroll_format">%2$d యొక్క %1$d విడ్జెట్ల పేజీ</string>
+    <!-- Folder accessibility -->
+    <!-- The format string for when a folder is opened, speaks the dimensions -->
+    <string name="folder_opened">ఫోల్డర్ తెరవబడింది, <xliff:g id="height" example="3">%2$d</xliff:g> ద్వారా <xliff:g id="width" example="5">%1$d</xliff:g> </string>
+    <!-- Instruction that clicking outside will close folder -->
+    <string name="folder_tap_to_close">ఫోల్డర్ మూయడానికి తాకండి.</string>
+    <!-- Instruction that clicking outside will commit folder rename -->
+    <string name="folder_tap_to_rename">రీ నేమ్ సేవ్ చేయడానికి తాకండి</string>
+    <!-- Indication that folder closed -->
+    <!-- Folder renamed format -->
+    <string name="folder_renamed">ఫోల్డర్ <xliff:g id="name" example="Games">%1$s</xliff:g> కు పేరు మార్చబడింది</string>
+    <!-- Folder name format -->
+    <string name="folder_name_format">ఫోల్డర్: <xliff:g id="name" example="Games">%1$s</xliff:g></string>
+    <!--  title definition for tools -->
+    <string name="title_folder_tools">టూల్స్</string>
+    <!--  title definition for recommend_app -->
+    <!--  title definition for games -->
+    <!-- xiaodong.lxd add for widget -->
+    <string name="widgets_view_title">విడ్జెట్లు</string>
+    <!-- zhangqiang.zq add for menu -->
+    <string name="menu_item_themes">థీమ్‌లు</string>
+    <string name="menu_item_wallpapers">వాల్‌పేపర్లు</string>
+    <string name="menu_item_homeshellsetting">హోమ్‌షెల్ సెట్టింగ్‌లు</string>
+    <string name="menu_item_widget">విడ్జెట్లు</string>
+    <string name="menu_item_effects">ఎఫెక్టులు</string>
+    <!-- for corner mark -->
+    <string name="new_mark_shortcut">కొత్త</string>
+    <string name="notification_mark">\u2026</string>
+    <!-- hongxing.whx add for the name of default folders -->
+    <string name="tools">టూల్స్</string>
+    <string name="tools_en">టూల్స్</string>
+    <string name="tools_cn">工具</string>
+    <string name="tools_tw">工具</string>
+
+    <string name="games">గేమ్స్</string>
+    <string name="games_en">గేమ్స్</string>
+    <string name="games_cn">游戏</string>
+    <string name="games_tw">遊戲</string>
+
+    <string name="recommend_app">సిఫారసు చేయబడ్డ యాప్‌లు</string>
+    <string name="recommend_app_en">సిఫారసు చేయబడ్డ యాప్‌లు</string>
+    <string name="recommend_app_cn">推荐应用</string>
+    <string name="recommend_app_tw">推薦应用</string>
+    <!-- zhangqiang.zq add for folder -->
+    <string name="folder_name_etc">&quot;మొదలైనవి&quot;</string>
+    <!--  edit by dongjun for traffic panel begin-->
+    <string name="delete_succeed">అప్లికేషన్ తొలగించడం మరియు అన్‌ఇన్‌స్టాల్ చేయడం విజయవంతమైంది</string>
+
+    <string name="delete_cloudapp_succeed">అప్లికేషన్ విజయవంతంగా అన్‌ఇన్‌స్టాల్ చేయబడింది</string>
+
+    <string name="delete_failed">అప్లికేషన్ అన్‌ఇన్‌స్టాల్ చేయడం విఫలమైంది!</string>
+
+    <string name="delete_bookmark_succeed">బుక్‌మార్క్ విజయవంతంగా తొలగించబడింది!</string>
+
+    <string name="cloudapp_add_succeed">క్లౌడ్ అప్లికేషన్ హోమ్‌షెల్‌కు జతచేయబడింది</string>
+    <string name="cloudapp_exist">క్లౌడ్ అప్లికేషన్ ఇప్పటికే ఉంది</string>
+    <string name="cloudapp_updated">క్లౌడ్ అప్లికేషన్ హోమ్‌షెల్‌కు ఇప్పటికే అప్‌డేట్ చేస్తుంది</string>
+    <string name="bookmark_add_succeed">హోమ్‌షెల్‌కు బుక్‌మార్క్ జతచేయబడింది</string>
+    <string name="bookmark_exist">బుక్‌మార్క్ ఇప్పటికే ఉంది</string>
+    <string name="bookmark_updated">బుక్‌మార్క్ హోమ్‌షెల్‌కు ఇప్పటికే అప్‌డేట్ చేస్తుంది</string>
+    <string name="shortcut_added">హోమ్‌షెల్‌కు <xliff:g id="name">%s</xliff:g> జతచేయబడింది</string>
+
+    <string name="application_not_show_no_space">ప్రస్తుత డెస్క్‌టాప్‌కు ఎలాంటి ఖాళీలు లేవు, కొత్త అప్లికేషన్‌లు తాత్కాలికంగా ప్రదర్శించబడవు</string>
+    <string name="icon_not_show_no_space">ప్రస్తుత డెస్క్‌టాప్‌కు ఎలాంటి ఖాళీలు లేవు, ఇతర ఐకాన్‌లు తాత్కాలికంగా ప్రదర్శించబడవు</string>
+
+    <string name="application_unavailable">అప్లికేషన్ లభ్యం కావడం లేదు</string>
+    <string name="application_unavailable_due_to_frozen">అప్లికేషన్ స్తంభింప చేయబడింది, దయచేసి ముందు బయటకు వెళ్లండి</string>
+
+    <string name="application_unavailable_being_unfrozen">అప్లికేషన్ స్తంభించడం తొలగించబడింది, దయచేసి ఒక క్షణం వేచి ఉండండి</string>
+
+    <string name="shortcut_unavailable_due_to_frozen">వాస్తవ అప్లికేషన్ స్తంభింప చేయబడింది, దయచేసి ముందు దానిని స్తంభింప చేయడం నిలిపివేయండి</string>
+    <string name="sdcard_application_unavailable">అప్లికేషన్ లభ్యం కాదు, దయచేసి మెమరీ కార్డ్ తనిఖీ చేయండి లేదా దానిని తిరిగి ఇన్‌స్టాల్ చేయండి</string>
+    <string name="sdcard_application_unavailable_usb">అప్లికేషన్ USB డ్రైవ్ మోడ్‌లో లభ్యం కాదు</string>
+    <string name="application_not_deleted_in_usb">USB డ్రైవ్ మోడ్ డిలీట్ చేయలేకపోయింది</string>
+
+    <string name="allapp_updating_not_allowed_edit">ఇన్‌స్టాల్ చేసిన తరువాత దయచేసి ఎడిట్ చేయండి</string>
+    <string name="restore_not_allowed_edit">పునరుద్ధరణ తరువాత దయచేసి ఎడిట్ చేయండి</string>
+    <string name="in_edit_staus">ఒక కొత్త ఫోల్డర్ జోడించడానికి ఐకాన్‌ను మరోదానికి లాగండి</string>
+
+    <string name="open_wlan">WLAN ప్రారంభించు</string>
+    <string name="close_wlan">WLAN నిలిపివేయి</string>
+    <string name="open_mobile_data">మొబైల్ డేటా  ప్రారంభించు</string>
+    <string name="close_mobile_data">మొబైల్ డేటా నిలిపివేయి</string>
+    <string name="open_soundmode_normal">రింగింగ్ విధానం ప్రారంభించు</string>
+    <string name="open_soundmode_silent">సైలెంట్ విధానం ప్రారంభించు</string>
+    <string name="open_soundmode_vibrate">వైబ్రేషన్ విధానం ప్రారంభించు</string>
+    <string name="app_updating">అప్‌డేట్ సమయంలో యాప్ లభ్యం కాదు</string>
+    <string name="add_widgets_succes">విడ్జెట్ జోడించబడింది</string>
+    <!--  edit by dongjun for traffic panel end-->
+    <!-- added by hongixng.whx bugid:68358 --><string name="waiting">వేచి ఉంది</string>
+    <string name="downloading">దిగుమతి చేస్తోంది</string>
+    <string name="paused">పాజ్ చేయబడింది</string>
+    <string name="installing">వ్యవస్థాపించు</string>
+    <!-- end of 68358 --><!-- added by hao.liuhaolh bugid:98731 -->
+    <string name="loading">లోడింగ్&#8230;</string>
+    <!-- end of 98731 --><!-- added by dongjun for BugID:69179 begin -->
+    <string name="delete_download_info">అప్లికేషన్ డిలీట్ చేయబడింది</string>
+
+    <!-- added by dongjun for BugID:69179 begin -->
+    <!-- added by yaodi.yd for optimize uninstalling process begin -->
+    <string name="uninstall_title">%Sను మీరు అన్‌ఇన్‌స్టాల్ చేయాలని అనుకుంటున్నారా?</string>
+    <string name="uninstall_app_confirm">అన్‌ఇనస్టల్ చేయి</string>
+    <string name="uninstall_app_cancel">రద్దు చేయండి</string>
+    <string name="dismiss_folder_hint">%s ఫోల్డర్‌ని మీరు డిస్‌మిస్ చేయాలని అనుకుంటున్నారా?</string>
+    <string name="dismiss_folder_confirm">డిస్మిస్</string>
+    <string name="dismiss_folder_cancel">రద్దు చేయండి</string>
+    <!-- added by yaodi.yd for optimize uninstalling process end -->
+    <!-- added by xiaodong.lxd -->
+    <!-- added by yaodi.yd for fling to call speech service begin -->
+    <string name="notify_wait_speech">త్వరలో వాయిస్ ఫంక్షన్ వస్తోంది.</string>
+    <!-- added by yaodi.yd for fling to call speech service end -->
+    <!-- added by wenliang.dwl -->
+    <string name="hideseat_is_full">హైడ్‌సీట్ నిండుగా ఉంది, మీరు మరిన్ని యాప్‌లను పెట్టలేరు</string>
+    <string name="hideseat_not_enough_space">హైడ్‌సీటులో మీకు తగినంత స్థలం లేదు</string>
+    <!-- added by hao.liuhaolh -->
+    <string name="app_exist">అప్లికేషన్ ఇప్పటికే ఉంది</string>
+    <!-- added by chao.jiangchao -->
+    <!-- added by chao.jiangchao -->
+    <!-- added by zhanggong.zg -->
+    <string name="hideseat_cling_hint">ఎలాంటి డేటా మరియు మెమరీ వినియోగం లేకుండా యాప్‌లను ఫ్రీజ్ చేయడం కొరకు ఐకాన్‌లను ఇక్కడకు లాగండి.</string>
+    <!-- added by zhanggong.zg -->
+    <string name="hideseat_does_not_accept_downloading_items">డౌన్‌లోడ్ ముగిసేంత వరకు కూడా ఈ ఐకాన్‌ను ఫ్రీజ్ చేయలేం.</string>
+    <!-- added by zhanggong.zg -->
+    <string name="hideseat_does_not_accept_installing_items">ఇన్‌స్టలేషన్ ముగిసేంత వరకు కూడా ఈ ఐకాన్‌ను ఫ్రీజ్ చేయలేం.</string>
+    <!-- added by zhanggong.zg -->
+    <string name="hideseat_does_not_accept_this_item">ఈ ఐకాన్‌ను స్తంభింపచేయలేం.</string>
+    <string name="hideseat_does_not_accept_downloading_folder">డౌన్‌లోడ్ ముగిసేంత వరకు కూడా ఈ ఫోల్డర్‌ని ఫ్రీజ్ చేయలేం.</string>
+    <string name="hideseat_does_not_accept_folder_with_non_app">ఈ ఫోల్డర్‌లో ఫ్రీజ్ చేయలేని ఐకాన్‌లు ఉన్నాయి.</string>
+    <!--  added by dongjun for settings begin-->
+    <string name="settings_individuation_title">వ్యక్తిగతీకరించబడింది</string>
+    <string name="settings_layout_title">హోమ్‌షెల్ లేవుట్</string>
+    <string name="settings_screen_slide_effect">స్క్రీన్ స్లైడ్ ఎఫెక్ట్</string>
+    <string name="settings_icon_layout">హోమ్‌షెల్ ఐకాన్ లేవుట్</string>
+    <string name="settings_arrange_page">హోమ్‌షెల్ అమర్పు</string>
+    <string name="setttings_arrange_page_subtitle">ఈ పేజీ ఐకాన్ ఎలాంటి గ్యాప్‌లు లేకుండా అమర్చబడుతుంది</string>
+    <string name="settings_effect_cancel_btn">రద్దు చేయండి</string>
+    <!--  added by dongjun for settings end-->
+    <!-- added by hongchao.ghc BugID:126343  for settings show icon mark begin-->
+    <string name="settings_icon_mark_title">ఐకాన్ మార్క్</string>
+    <string name="settings_icon_mark">కొత్త అప్లికేషన్ ఐకాన్ మార్క్ చూపించు</string>
+    <!-- added by hongchao.ghc BugID:126343 for settings show icon mark end-->
+    <!-- by wenliang.dwl -->
+    <string name="settings_notification_mark_title">యాప్‌ల మీద నోటిఫికేషన్ మార్కులు చూపించు</string>
+
+    <string name="settings_continuous_homeshell">హోమ్‌షెల్ కొనసాగింపు</string>
+    <string name="forbid_layout_change_when_big">కార్డ్ బ్యాక్‌గ్రౌండ్ ఉపయోగించేటప్పుడు లేవుట్‌ని మీరు మార్చలేరు</string>
+    <!--  added by yangshan for batch operation of the icons in folder begin-->
+    <string name="confirm_btn_label">“ఒకే”</string>
+    <string name="cancel_btn_label">&quot;రద్దు చేయి&quot;</string>
+    <string name="upside_apps_title">అప్లికేషన్‌లు ఎంచుకోండి</string>
+    <string name="over_folder_capicity">ఫోల్డర్‌ల్లోని గరిష్ట సంఖ్యలో అప్లికేషన్‌లు:</string>
+    <string name="over_max_screen_count">క్షమించండి, స్క్రీన్లు గరిష్ట సంఖ్యకు చేరుకున్నాయి </string>
+    <!--  added by yangshan for batch operation of the icons in folder end-->
+    <!--  added by zhangqiang.zq for search begin-->
+    <string name="search_app_goto_app_store">యాప్ మార్కెట్లో శోధించు</string>
+    <string name="search_app_mark">అప్లికేషన్</string>
+    <string name="search_bookmark_mark">బుక్‌మార్కులు</string>
+    <string name="search_cloudapp_mark">క్లౌడ్ యాప్</string>
+    <string name="search_vp_mark">సిఫారసు చేయబడ్డ యాప్‌లు</string>
+    <string name="search_other_mark">ఇతర</string>
+    <!-- added by zhangqiang.zq for search end -->
+    <!--  added by xinzheng.lxz for lifecenter begin-->
+    <string name="lifecenter_update_msg">లైఫ్‌సెంటర్ అప్‌డేట్ చేయబడింది, దానిని రీలోడ్ చేయాలా?</string>
+    <!-- added by xinzheng.lxz for lifecenter end -->
+    <!--  added by zhangqiang.zq for aged mode begin-->
+    <string name="other_apps">ఇతర యాప్‌లు</string>
+    <string name="aged_freeze_homeshell">లాక్ సవరించు</string>
+    <string name="aged_freeze_homeshell_sub">తప్పుగా లేవుట్ మారడం నుంచి నిరోధించండి.</string>
+    <string name="aged_freeze_homeshell_toast">ఐకాన్‌లు మరియు లేవుట్‌లు లాక్ చేయబడ్డాయి. సెట్టింగ్‌ల్లో మీరు డిసేబుల్ చేయవచ్చు.</string>
+    <!--  added by zhangqiang.zq for aged mode end-->
+    <string name="noti_service_name">హోమ్‌షెల్ యాప్ నోటిఫికేషన్</string>
+    <string name="set_readed">చదివినట్లుగా మార్క్ చేయి</string>
+    <string name="folder_dismiss_cancelled">ఫోల్డర్‌లోనికి అన్ని ఐటమ్‌లు తీసుకోవడానికి తగినంత స్థలం లేదు, డిస్మిస్ క్యాన్సిల్ చేయబడింది.</string>
+    <string name="str_load">లోడింగ్&#8230;</string>
+
+    <string name="str_folder_name">ఫోల్డర్</string>
+    <string name="sd_app_icon_del">SD కార్డ్ యాప్ ఐకాన్ తొలగించబడింది</string>
+
+    <string name="str_add">మరియు</string>
+    <!-- added by xiaodong.lxd -->
+    <string name="shortcut_name_empty">పేరు ఖాళీగా ఉండటంతో షార్ట్‌కట్ జోడించడం విఫలమైంది.</string>
+    <!--  added by yangshan.ys for 3*3 layout start-->
+    <string name="layout_change_toast">ఈ థీమ్‌లో 4*5 మద్దతు ఇవ్వబడదు.</string>
+    <string name="forbid_layout_change_when_3_3">ఈ మోడ్‌లో లేవుట్ మార్చలేం.</string>
+    <!--  added by yangshan.ys for 3*3 layout end-->
+    <string name="card_msg_attarchment">‘‘(జోడింపు)&quot;</string>
+
+    <string name="theme_loading">థీమ్ మార్చబడుతోంది&#8230;</string>
+    <!-- Edit mode -->
+    <string name="edit_mode_tips_widgets">విడ్జెట్లు</string>
+    <string name="edit_mode_tips_effects">ఎఫెక్టులు</string>
+    <string name="edit_mode_tips_wallpapers">వాల్‌పేపర్లు</string>
+    <string name="edit_mode_tips_themes">థీమ్</string>
+    <string name="edit_mode_tips_celllayouts">ఐకాన్ ఎంచుకోండి మరియు తరువాత అమర్చడం కొరకు డ్రాగ్ చేయండి</string>
+    <string name="edit_mode_tips_multiselect">%1$s ఎంచుకోబడింది</string>
+    <string name="edit_mode_add_to_folder">ఫోల్డర్‌కు జోడించు</string>
+    <string name="edit_mode_title_theme_repo">స్టోర్‌</string>
+    <string name="edit_mode_ttitle_wallpaper_repo">స్టోర్‌</string>
+
+</resources>

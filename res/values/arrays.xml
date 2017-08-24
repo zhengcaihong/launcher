@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- added by xiaodong.lxd for push to talk -->
+    
+    <array name="components">
+        <item>com.yunos.alicontacts/com.yunos.alicontacts.activities.PeopleActivity2</item>
+        <item> com.yunos.alicontacts/com.yunos.alicontacts.activities.DialtactsContactsActivity</item>
+        <item>com.android.mms/com.android.mms.ui.ConversationList</item>
+        <item>com.android.settings/com.android.settings.Settings</item>
+        <item>com.UCMobile.yunos/com.UCMobile.main.UCMobile</item>
+        <item>com.UCMobile/com.UCMobile.main.UCMobile</item>
+        <!-- YUNOS BEGIN -->
+        <!-- ##date:2014/06/25 ##author:hongchao.ghc ##BugID:132625 -->
+        <item>com.aliyun.wireless.vos.appstore/com.aliyun.wireless.vos.appstore.LogoActivity</item>
+        <!-- YUNOS END -->
+    </array>
+    <array name="scene">
+        <item>yunos.vui.contact</item>
+        <item>yunos.vui.call</item>
+        <item>yunos.vui.sms</item>
+        <item>yunos.vui.setting</item>
+        <item>yunos.vui.website</item>
+        <item>yunos.vui.website</item>
+        <!-- YUNOS BEGIN -->
+        <!-- ##date:2014/06/25 ##author:hongchao.ghc ##BugID:132625 -->
+        <item>yunos.vui.application</item>
+        <!-- YUNOS END -->
+    </array>
+
+    <string-array name="entries_effect_preference">
+        <item>Classic</item>
+        <item>Box Out</item>
+        <item>Box In</item> 
+        <item>Roll Up</item>
+        <item>Roll Down</item>
+        <item>Shutter</item>  
+        <item>Roll Over</item> 
+        <item>Scale In Out</item>
+        <item>Floating</item>
+        <item>Fade In Out</item>  
+    </string-array>
+
+    <array name="effect_choose_img">
+        <item>@drawable/effect_horizontal</item>
+        <item>@drawable/effect_box_out</item>
+        <item>@drawable/effect_box_in</item>
+        <item>@drawable/effect_roll_down</item>
+        <item>@drawable/effect_roll_up</item>
+        <item>@drawable/effect_roll_window</item>
+        <item>@drawable/effect_roll_over</item>
+        <item>@drawable/effect_scale_int_out</item>
+        <item>@drawable/effect_random_switch</item>
+        <item>@drawable/effect_right_fade</item>
+    </array>
+
+    <string-array name="entries_effect_preference_3d">
+        <item>Classic</item>
+        <item>Box Out</item>
+        <item>Box In</item> 
+        <item>Roll Up</item>
+        <item>Roll Down</item>
+        <item>Shutter</item>  
+        <item>Roll Over</item> 
+        <item>Scale In Out</item>
+        <item>Floating</item>
+        <item>Fade In Out</item>
+        <item>Glass</item>
+        <item>Cloth</item>
+    </string-array>
+
+    <array name="effect_choose_img_3d">
+        <item>@drawable/effect_horizontal</item>
+        <item>@drawable/effect_box_out</item>
+        <item>@drawable/effect_box_in</item>
+        <item>@drawable/effect_roll_down</item>
+        <item>@drawable/effect_roll_up</item>
+        <item>@drawable/effect_roll_window</item>
+        <item>@drawable/effect_roll_over</item>
+        <item>@drawable/effect_scale_int_out</item>
+        <item>@drawable/effect_random_switch</item>
+        <item>@drawable/effect_right_fade</item>
+        <item>@drawable/effect_glass_3d</item>
+        <item>@drawable/effect_cloth_3d</item>
+    </array>
+    
+    <string-array name="entryvalues_effect_preference_3d">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item> 
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>  
+        <item>6</item> 
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+
+    <string-array name="entryvalues_effect_preference">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item> 
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>  
+        <item>6</item> 
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>  
+    </string-array>   
+    
+    <string-array name="entries_layout_preference">
+        <item>4x4</item>
+        <item>4x5</item>
+    </string-array> 
+    
+    <string-array name="entryvalues_layout_preference">
+        <item>0</item>
+        <item>1</item>
+    </string-array> 
+
+    <!-- system applications corresponding package name,between sys_app_cat_id is the corresponding -->
+    <string-array name="sys_app_pkg_name">
+        <item>com.yunos.alicontacts</item> <!-- Phone -->
+        <item>com.android.mms</item> <!-- Message -->
+        <item>com.yunos.alicontacts</item> <!-- Contacts -->
+        <item>com.aliyun.wireless.vos.appstore</item> <!-- AppMarket -->
+        <item>com.aliyun.SecurityCenter</item> <!-- Security -->
+        <item>com.android.settings</item> <!-- Settings -->
+        <item>com.aliyunos.filemanager</item> <!-- FileManager -->
+        <item>io.yunos.bbs</item> <!-- Forum -->
+        <item>com.aliyun.issuereporter</item> <!-- UserFeedback -->
+        <item>com.yunos.easyclone</item> <!-- EasyClone -->
+        <item>com.stkj.dianchuan</item> <!-- DianChuan -->
+        <item>com.yunos.theme.thememanager</item> <!-- Themes -->
+        <item>com.yunos.weatherservice</item> <!-- Weather -->
+        <item>com.moji.aliyun</item> <!-- Moji -->
+        <item>com.android.calendar</item> <!-- Calendar -->
+        <item>com.android.deskclock</item> <!-- Clock -->
+        <item>com.eg.android.AlipayGphone</item> <!-- Alipay -->
+        <item>com.autonavi.minimap</item> <!-- Map -->
+        <item>com.yunos.compass</item> <!-- Compass -->
+        <item>com.aliyun.mobile.email</item> <!-- Email -->
+        <item>com.aliyun.note</item> <!-- Notes -->
+        <item>com.yunos.calculator</item> <!-- Calculator -->
+        <item>com.UCMobile</item> <!-- Browser -->
+        <item>com.yunos.camera</item> <!-- Camera -->
+        <item>com.aliyun.image</item> <!-- Photo -->
+        <item>fm.xiami.yunos</item> <!-- Music -->
+        <item>com.aliyun.video</item> <!-- Video -->
+        <item>com.yunos.FMRadio</item> <!-- FMRadio -->
+        <item>com.aliyun.soundrecorder</item> <!-- Record -->
+        <item>com.yunos.gamestore</item> <!-- Games -->
+    </string-array>
+    <!-- system applications corresponding category ID -->
+    <string-array name="sys_app_cat_id">
+        <item>"48"</item> <!-- Phone -->
+        <item>"48"</item> <!-- Message -->
+        <item>"48"</item> <!-- Contacts -->
+        <item>"48"</item> <!-- AppMarket -->
+        <item>"48"</item> <!-- Security -->
+        <item>"48"</item> <!-- Settings -->
+        <item>"48"</item> <!-- FileManager -->
+        <item>"48"</item> <!-- Forum -->
+        <item>"48"</item> <!-- UserFeedback -->
+        <item>"48"</item> <!-- EasyClone -->
+        <item>"48"</item> <!-- DianChuan -->
+        <item>"70"</item> <!-- Themes -->
+        <item>"72"</item> <!-- Weather -->
+        <item>"72"</item> <!-- Moji -->
+        <item>"72"</item> <!-- Calendar -->
+        <item>"72"</item> <!-- Clock -->
+        <item>"74"</item> <!-- Alipay -->
+        <item>"76"</item> <!-- Map -->
+        <item>"76"</item> <!-- Compass -->
+        <item>"86"</item> <!-- Email -->
+        <item>"86"</item> <!-- Notes -->
+        <item>"86"</item> <!-- Calculator -->
+        <item>"226"</item> <!-- Browser -->
+        <item>"228"</item> <!-- Camera -->
+        <item>"228"</item> <!-- Photo -->
+        <item>"230"</item> <!-- Music -->
+        <item>"230"</item> <!-- Video -->
+        <item>"230"</item> <!-- FMRadio -->
+        <item>"230"</item> <!-- Record -->
+        <item>"344"</item> <!-- Games -->
+    </string-array>
+
+    <!-- xiaodong.lxd TODO_EDITMODE -->
+    <array name="editmode_effect_choose_img">
+        <!--
+        <item>@drawable/editmode_effect_horizontal</item>
+        <item>@drawable/editmode_effect_box_out</item>
+        <item>@drawable/editmode_effect_box_in</item>
+        <item>@drawable/editmode_effect_roll_up</item>
+        <item>@drawable/editmode_effect_roll_down</item>
+        <item>@drawable/editmode_effect_roll_window</item>
+        <item>@drawable/editmode_effect_roll_over</item>
+        <item>@drawable/editmode_effect_scale_int_out</item>
+        <item>@drawable/editmode_effect_random_switch</item>
+        <item>@drawable/editmode_effect_right_fade</item>
+        -->
+        <item>@drawable/ic_effects_classic</item>
+        <item>@drawable/ic_effects_outside_box</item>
+        <item>@drawable/ic_effects_inside_box</item>
+        <item>@drawable/ic_effects_flip_up</item>
+        <item>@drawable/ic_effects_flip_down</item>
+        <item>@drawable/ic_effects_ishutters</item>
+        <item>@drawable/ic_effects_flip</item>
+        <item>@drawable/ic_effects_compression</item>
+        <item>@drawable/ic_effects_floating</item>
+        <item>@drawable/ic_effects_fading</item>
+    </array>
+
+    <array name="editmode_effect_choose_img_3d">
+        <item>@drawable/ic_effects_classic</item>
+        <item>@drawable/ic_effects_outside_box</item>
+        <item>@drawable/ic_effects_inside_box</item>
+        <item>@drawable/ic_effects_flip_up</item>
+        <item>@drawable/ic_effects_flip_down</item>
+        <item>@drawable/ic_effects_ishutters</item>
+        <item>@drawable/ic_effects_flip</item>
+        <item>@drawable/ic_effects_compression</item>
+        <item>@drawable/ic_effects_floating</item>
+        <item>@drawable/ic_effects_fading</item>
+        <item>@drawable/ic_effects_crystal</item>
+        <item>@drawable/ic_effects_cloth_art</item>
+    </array>
+
+    <string-array name="icon_sort_array">
+        <item>Arrange the screen icons</item>
+        <item>Arrange all icons</item>
+        <item>Auto classify icons</item>
+    </string-array>
+
+    <string-array name="invalid_call_number">
+        <item>110</item>
+        <item>112</item>
+        <item>119</item>
+        <item>10000</item>
+        <item>10010</item>
+        <item>10086</item>
+     </string-array>
+</resources>

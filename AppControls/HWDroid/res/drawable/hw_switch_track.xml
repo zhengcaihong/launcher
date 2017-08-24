@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item  android:state_checked="true" android:state_enabled="false">
+         <nine-patch android:src="@drawable/hw_switch_on_bg_disable" android:tint="?attr/hw_colorPrimaryDisabled" />
+    </item>
+    <item  android:state_checked="true" android:state_enabled="true">
+         <nine-patch android:src="@drawable/hw_switch_on_bg_normal" android:tint="?attr/hw_colorPrimary" />
+    </item>
+    <item android:drawable="@drawable/hw_switch_off_bg_normal" android:state_checked="false" android:state_enabled="true"/>
+    <item android:drawable="@drawable/hw_switch_off_bg_disable" android:state_checked="false" android:state_enabled="false"/>
+
+</selector>

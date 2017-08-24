@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+<!-- AppsCustomize -->
+    <!-- We can also afford to have a slightly wider portrait layout in
+         xlarge -->
+
+<!-- Workspace -->
+    <!-- the area at the edge of the screen that makes the workspace go left
+         or right while you're dragging. -->
+    <dimen name="scroll_zone">40dp</dimen>
+    <dimen name="workspace_page_spacing">24dp</dimen>
+
+    <dimen name="qsb_bar_height">52dp</dimen>
+    <dimen name="qsb_bar_height_inset">102dp</dimen>
+    <!-- We offset the proxy to overlap with the voice icon -->
+
+    <!-- Divider width set to match the qsb width -->
+    <dimen name="workspace_divider_padding_left">72dp</dimen>
+    <dimen name="workspace_divider_padding_right">72dp</dimen>
+
+<!-- Hotseat -->
+    <dimen name="hotseat_width_gap">14dp</dimen>
+    <dimen name="button_bar_height">126dp</dimen>
+    <dimen name="button_bar_height_plus_padding">156dp</dimen>
+    <dimen name="button_bar_height_bottom_padding">16dp</dimen>
+
+    <dimen name="workspace_cell_width_land">82dp</dimen>
+    <dimen name="workspace_cell_width_port">82dp</dimen>
+    <dimen name="workspace_cell_height_land">109dp</dimen>
+    <dimen name="workspace_cell_height_port">109dp</dimen>
+    <dimen name="workspace_left_padding_port">0dp</dimen>
+    <dimen name="workspace_left_padding_land">0dp</dimen>
+    <dimen name="workspace_right_padding_port">0dp</dimen>
+    <dimen name="workspace_right_padding_land">0dp</dimen>
+
+    <dimen name="folder_cell_width">82dp</dimen>
+    <dimen name="folder_cell_height">109dp</dimen>
+    <dimen name="folder_cell_width_small">82dp</dimen>
+    <dimen name="folder_cell_height_small">109dp</dimen>
+
+    <dimen name="hotseat_cell_width">82dp</dimen>
+    <dimen name="hotseat_cell_height">109dp</dimen>
+    <dimen name="button_bar_height_top_padding">14dp</dimen>
+    <dimen name="button_bar_width_left_padding">0dp</dimen>
+    <dimen name="button_bar_width_right_padding">0dp</dimen>
+
+    <dimen name="hideseat_cell_layout_cell_height">109dp</dimen>
+    <dimen name="hideseat_cell_layout_top_padding">4dp</dimen>
+
+    <dimen name="folder_cell_width_gap">80dp</dimen>
+    <dimen name="folder_cell_height_gap">40dp</dimen>
+    <dimen name="folder_cell_width_gap_small">80dp</dimen>
+    <dimen name="folder_cell_height_gap_small">40dp</dimen>
+
+    <dimen name="workspace_top_padding_port">50dp</dimen>
+    <dimen name="workspace_top_padding_land">82dp</dimen>
+    <dimen name="workspace_bottom_padding_port">@dimen/button_bar_height</dimen>
+    <dimen name="workspace_bottom_padding_land">0dp</dimen>
+
+    <dimen name="land_divider_margin_top">86dp</dimen>
+    <dimen name="land_divider_margin_bottom">52dp</dimen>
+    <dimen name="land_divider_margin_left">864dp</dimen>
+
+    <dimen name="cell_layout_left_padding_port">85dp</dimen>
+    <dimen name="cell_layout_left_padding_land">60dp</dimen>
+    <dimen name="cell_layout_right_padding_port">85dp</dimen>
+    <dimen name="cell_layout_right_padding_land">60dp</dimen>
+    <dimen name="cell_layout_top_padding_port">12dp</dimen>
+    <dimen name="cell_layout_top_padding_land">12dp</dimen>
+    <dimen name="cell_layout_bottom_padding_port">8dp</dimen>
+    <dimen name="cell_layout_bottom_padding_land">8dp</dimen>
+
+    <dimen name="folder_preview_size">72dp</dimen>
+    <dimen name="qsb_padding_left">0dp</dimen>
+    <dimen name="qsb_padding_right">0dp</dimen>
+
+    <dimen name="em_tips_margin_top">30dp</dimen>
+    <dimen name ="em_tips_text_size">18sp</dimen>
+
+    <dimen name="ic_celllayout_delete_btn_margin_top">9dp</dimen>
+    <dimen name="ic_celllayout_delete_btn_margin_right">20dp</dimen>
+    <dimen name="ic_celllayout_delete_btn_width">30dp</dimen>
+    <dimen name="ic_celllayout_delete_btn_height">30dp</dimen>
+    <dimen name="ic_celllayout_add_btn_width">70dp</dimen>
+    <dimen name="ic_celllayout_add_btn_height">70dp</dimen>
+    <dimen name="em_widget_preview_padding_top">5dp</dimen>
+
+    <dimen name="workspace_icon_text_size_small">15sp</dimen>
+    <dimen name="workspace_icon_text_size">15sp</dimen>
+    <dimen name="bubble_icon_width">72dp</dimen>
+</resources>

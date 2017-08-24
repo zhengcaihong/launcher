@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+* Copyright (C) 2008 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- General -->
+    <skip />
+    <!-- Application name -->
+    <string name="application_name">YunOS HomeShell</string>
+    <!-- Accessibility-facing application name -->
+    <!-- Name for all applications running as this uid. -->
+    <!-- Default folder name -->
+    <string name="folder_name"></string>
+    <!-- Title of dialog that appears after user selects Wallpaper from menu -->
+    <string name="chooser_wallpaper">Choose wallpaper from</string>
+    <!-- Button label on Wallpaper Gallery screen; user selects this button to set a specific wallpaper -->
+    <!-- Option in "Select wallpaper from" dialog box -->
+    <!-- Displayed when user selects a shortcut for an app that was uninstalled [CHAR_LIMIT=none]-->
+    <string name="activity_not_found">App isn\'t installed</string>
+    <!--  Labels for the tabs in the customize drawer -->
+    <string name="widgets_tab_label">Widgets</string>
+
+    <!-- AppsCustomize pane -->
+    <!-- Message to tell the user to press and hold on a widget to add it [CHAR_LIMIT=50] -->
+    <string name="long_press_widget_to_add">Please long press the widget to add</string>
+
+    <!-- The format string for the dimensions of a widget in the drawer -->
+    <!-- There is a special version of this format string for Farsi -->
+    <string name="widget_dims_format">%1$d \u00d7 %2$d</string>
+
+    <!-- External-drop widget error string.  This is the error that is shown
+         when you drag and item into the homescreen and it is unable to fit,
+         or an error is encountered. [CHAR_LIMIT=50] -->
+    <!-- External-drop widget pick title.  This is shown as the title of the
+         dialog which allows you to pick which widgets to handle a particular
+         drop if there are multiple choices. [CHAR_LIMIT=35] -->
+
+    <!-- Folders -->
+    <skip />
+    <!-- Label of Folder name field in Rename folder dialog box -->
+    <!-- Title of dialog box -->
+    <!-- Buttons in Rename folder dialog box -->
+    <!-- Buttons in Rename folder dialog box -->
+
+    <!-- Shortcuts -->
+    <skip />
+    <!-- Title of dialog box -->
+    <!-- Options in "Add to Home" dialog box; Title of the group containing the list of all apps -->
+    <string name="group_applications">Apps</string>
+    <!-- Options in "Add to Home" dialog box; Title of the group containing the list of all shortcut
+s -->
+    <!-- Options in "Add to Home" dialog box; Title of the group containing the list of all widgets/gadgets -->
+    <!-- Options in "Add to Home" dialog box; Title of the group containing the list of apps that can set the wallpaper-->
+    <string name="group_wallpapers">Wallpapers</string>
+    <!-- Error message when user has filled all their home screens -->
+    <string name="completely_out_of_space">No more room on your Home screens</string>
+    <!-- Error message when user has filled a home screen -->
+    <string name="out_of_space">No more room on this Home screen</string>
+    <!-- Error message when user has filled the hotseat -->
+    <string name="hotseat_out_of_space">No more room on the hotseat</string>
+    <!-- Error message when user tries to drop an invalid item on the hotseat -->
+    <!-- Message displayed when a shortcut is created by an external application -->
+    <!-- Message displayed when a shortcut is uninstalled by an external application -->
+    <string name="shortcut_uninstalled">Shortcut \"<xliff:g id="name" example="Browser">%s</xliff:g>\" was removed</string>
+    <!-- Message displayed when an external application attemps to create a shortcut that already exists -->
+    <string name="shortcut_duplicate">Shortcut \"<xliff:g id="name" example="Browser">%s</xliff:g>\" already exists</string>
+
+    <string name="shortcut_updated">Shortcut \"<xliff:g id="name" example="Browser">%s</xliff:g>\" updated</string>
+
+    <!-- Title of dialog when user is selecting shortcut to add to homescreen -->
+    <!-- Title of dialog when user is selecting an application to add to homescreen -->
+    <string name="title_select_application">Choose app</string>
+
+    <!-- All applications label -->
+    <string name="all_apps_button_label">Apps</string>
+    <!-- Label for button in all applications label to go back home (to the workspace / desktop)
+         for accessibilty (spoken when the button gets focus). -->
+    <string name="all_apps_home_button_label">Home</string>
+
+    <!-- Permissions: -->
+    <skip />
+    <!-- Permission short label -->
+    <string name="permlab_install_shortcut">Install shortcuts</string>
+    <!-- Permission description -->
+    <string name="permdesc_install_shortcut">Allows an app to add shortcuts without user intervention.</string>
+    <!-- Permission short label -->
+    <string name="permlab_uninstall_shortcut">Uninstall shortcuts</string>
+    <!-- Permission description -->
+    <string name="permdesc_uninstall_shortcut">Allows the app to remove shortcuts without user intervention</string>
+    <!-- Permission short label -->
+    <string name="permlab_read_settings">Read Home settings and shortcuts</string>
+    <!-- Permission description -->
+    <string name="permdesc_read_settings">Allows the app to read the settings and shortcuts in Home</string>
+    <!-- Permission short label -->
+    <string name="permlab_write_settings">Settings and shortcuts written in Home</string>
+    <!-- Permission description -->
+    <string name="permdesc_write_settings">Allows the app to change the settings and shortcuts in Home</string>
+    <!-- Permission short label -->
+    <string name="permlab_write_suggestedapps">Suggested apps written in Home</string>
+    <!-- Permission short label -->
+    <string name="permlab_read_suggestedapps">Suggested apps read in Home</string>
+    <!-- Permission icon update -->
+    <string name="permlab_icon_update">Send icon update intent</string>
+    <!-- Permission description -->
+    <string name="permdesc_icon_update">Allows the app to send icon update intent</string>
+
+    <!-- Widgets: -->
+    <skip />    
+
+    <!-- Text to show user in place of a gadget when we can't display it properly -->
+    <string name="gadget_error_text">Problem in loading widget</string>
+
+    <!-- Text to inform the user that they can't uninstall a system application -->
+
+    <!-- Title of the Android Dreams (screensaver) module -->
+
+    <!-- Default folder title -->
+    <string name="folder_hint_text">Unnamed Folder</string>
+
+    <!-- Accessibility -->
+    <skip />
+
+    <!-- The format string for Workspace descriptions [CHAR_LIMIT=none] -->
+    <string name="workspace_description_format">Home screen %1$d</string>
+
+    <!-- The format string for default page scroll text [CHAR_LIMIT=none] -->
+    <string name="default_scroll_format">Page %1$d of %2$d</string>
+    <!-- The format string for Workspace page scroll text [CHAR_LIMIT=none] -->
+    <string name="workspace_scroll_format">Home screen %1$d of %2$d</string>
+    <!-- The format string for AppsCustomize Apps page scroll text [CHAR_LIMIT=none] -->
+    <string name="apps_customize_apps_scroll_format">Apps page %1$d of %2$d</string>
+    <!-- The format string for AppsCustomize Apps page scroll text [CHAR_LIMIT=none] -->
+    <string name="apps_customize_widgets_scroll_format">Widgets page %1$d of %2$d</string>
+
+    <!-- Folder accessibility -->
+    <!-- The format string for when a folder is opened, speaks the dimensions -->
+    <string name="folder_opened">Folder opened, <xliff:g id="width" example="5">%1$d</xliff:g> by <xliff:g id="height" example="3">%2$d</xliff:g></string>
+    <!-- Instruction that clicking outside will close folder -->
+    <string name="folder_tap_to_close">Touch to close folder</string>
+    <!-- Instruction that clicking outside will commit folder rename -->
+    <string name="folder_tap_to_rename">Touch to save rename</string>
+    <!-- Indication that folder closed -->
+    <!-- Folder renamed format -->
+    <string name="folder_renamed">Folder renamed to <xliff:g id="name" example="Games">%1$s</xliff:g></string>
+    <!-- Folder name format -->
+    <string name="folder_name_format">Folder: <xliff:g id="name" example="Games">%1$s</xliff:g></string>
+
+    <!--  title definition for tools -->
+    <string name="title_folder_tools">Tools</string>
+    <!--  title definition for recommend_app -->
+    <!--  title definition for games -->
+    
+    <!-- xiaodong.lxd add for widget -->
+    <string name="widgets_view_title">Widgets</string>
+    
+    <!-- zhangqiang.zq add for menu -->
+    <string name="menu_item_themes">Themes</string>
+    <string name="menu_item_wallpapers">Wallpapers</string>
+    <string name="menu_item_homeshellsetting">HomeShell Settings</string>
+    <string name="menu_item_widget">Widgets</string>
+    <string name="menu_item_effects">Effects</string>
+    <string name="menu_item_sort">Icon mgmt</string>
+    <string name="menu_item_sort_page">Sort page</string>
+    <string name="menu_item_sort_all">Sort all</string>
+    <string name="menu_item_category">Category</string>
+
+    <!-- for corner mark -->
+    <string name="new_mark_shortcut">New</string>
+    <string name="notification_mark">\u2026</string>
+
+    <!-- hongxing.whx add for the name of default folders -->
+    <string name="tools">Tools</string>
+    <string name="tools_en">Tools</string>
+    <string name="tools_cn">工具</string>
+    <string name="tools_tw">工具</string>
+
+    <string name="games">Games</string>
+    <string name="games_en">Games</string>
+    <string name="games_cn">游戏</string>
+    <string name="games_tw">遊戲</string>    
+
+    <string name="recommend_app">Recommended apps</string>
+    <string name="recommend_app_en">Recommended apps</string>
+    <string name="recommend_app_cn">推荐应用</string>
+    <string name="recommend_app_tw">推薦应用</string>
+    
+    <!-- zhangqiang.zq add for folder -->
+    <string name="folder_name_etc">" etc"</string>
+    
+    <!--  edit by dongjun for traffic panel begin-->
+    <string name="delete_succeed">Delete and uninstall the application successfully</string>
+
+    <string name="delete_cloudapp_succeed">Uninstall the application successfully</string>
+
+    <string name="delete_failed">Uninstall the application failed!</string>
+
+    <string name="delete_bookmark_succeed">Delete the bookmark successfully!</string>
+
+    <string name="cloudapp_add_succeed">The cloud application has been added to the homeshell</string>
+    <string name="cloudapp_exist">The cloud application already exists</string>
+    <string name="cloudapp_updated">The cloud application already updates to the homeshell</string>
+    <string name="bookmark_add_succeed">The bookmark has been added to the homeshell</string>
+    <string name="bookmark_exist">The bookmark already exists</string>
+    <string name="bookmark_updated">The bookmark already updates to the homeshell</string>
+    <string name="shortcut_added"><xliff:g id="name">%s</xliff:g> has been added to the homeshell</string>
+
+    <string name="application_not_show_no_space">Current desktop has no vacancies, new applications temporarily not displayed</string>
+    <string name="icon_not_show_no_space">Current desktop has no vacancies, other icons temporarily not displayed</string>
+
+    <string name="application_unavailable">Application unavailable</string>
+    <string name="application_unavailable_due_to_frozen">The application has been frozen, please move out first</string>
+
+    <string name="application_unavailable_being_unfrozen">The application is being unfrozen, please wait a moment</string>
+
+    <string name="shortcut_unavailable_due_to_frozen">The original application has been frozen, please unfroze it first</string>
+    <string name="sdcard_application_unavailable">This application is unavailable, please check memory card or reinstall it</string>
+    <string name="sdcard_application_unavailable_usb">The application is unavailable in USB drive mode</string>
+    <string name="application_not_deleted_in_usb">Unable to delete in USB drive mode</string>
+
+    <string name="allapp_updating_not_allowed_edit">Please edit after installation</string>
+    <string name="restore_not_allowed_edit">Please edit after restoration</string>
+    <string name="in_edit_staus">Drag icon onto another to add a new folder</string>
+
+    <string name="open_wlan">Enable WLAN</string>
+    <string name="close_wlan">Disable WLAN</string>
+    <string name="open_mobile_data">Enable mobile data</string>
+    <string name="close_mobile_data">Disable mobile data</string>
+    <string name="open_soundmode_normal">Enable ringing mode</string>
+    <string name="open_soundmode_silent">Enable silent mode</string>
+    <string name="open_soundmode_vibrate">Enable vibration mode</string>
+    <string name="app_updating">App is unavailable during the update</string>
+    <string name="add_widgets_succes">Widget added</string>
+
+    <!--  edit by dongjun for traffic panel end-->
+    <!-- added by hongixng.whx bugid:68358 -->
+    <string name="waiting">Waiting</string>
+    <string name="downloading">Downloading</string>
+    <string name="paused">Paused</string>
+	<string name="installing">Installing</string>
+    <!-- end of 68358 -->
+
+    <!-- added by hao.liuhaolh bugid:98731 -->
+    <string name="loading">Loading...</string>
+    <!-- end of 98731 -->
+
+    <!-- added by dongjun for BugID:69179 begin -->
+    <string name="delete_download_info">Application Deleted</string>
+    <!-- added by dongjun for BugID:69179 begin -->
+    <!-- added by yaodi.yd for optimize uninstalling process begin -->
+    <string name="uninstall_title">Do you want to uninstall %s?</string>
+    <string name="delete_profile_title">Do you want to uninstall clone of %s?</string>
+    <string name="delete_and_uninstall_title">Uninstall %s and it\'s clone?</string>
+    <string name="uninstall_app_confirm">Uninstall</string>
+    <string name="uninstall_app_cancel">Cancel</string>
+    <string name="dismiss_folder_hint">Do you want to dismiss %s folder?</string>
+    <string name="dismiss_folder_confirm">Dismiss</string>
+    <string name="dismiss_folder_cancel">Cancel</string>
+    <!-- added by yaodi.yd for optimize uninstalling process end -->
+    
+    <!-- added by xiaodong.lxd -->
+    <!-- added by yaodi.yd for fling to call speech service begin -->
+    <string name="notify_wait_speech">Voice function is coming soon.</string>
+    <!-- added by yaodi.yd for fling to call speech service end -->
+
+    
+    <!-- added by wenliang.dwl -->
+    <string name="hideseat_is_full">Hideseat is full, you can not put more apps</string>
+    <string name="hideseat_not_enough_space">There is no enough space in hideseat</string>
+
+    <!-- added by hao.liuhaolh -->
+    <string name="app_exist">The application already exists</string>
+
+    <!-- added by chao.jiangchao -->
+
+    <!-- added by chao.jiangchao -->
+
+    <!-- added by zhanggong.zg -->
+    <string name="hideseat_cling_hint">Drag icons here, to freeze apps without any data and memory usage.</string>
+    <!-- added by zhanggong.zg -->
+    <string name="hideseat_does_not_accept_downloading_items">This icon cannot be frozen until finish the download.</string>
+    <!-- added by zhanggong.zg -->
+    <string name="hideseat_does_not_accept_installing_items">This icon cannot be frozen until finish the installation.</string>
+    <!-- added by zhanggong.zg -->
+    <string name="hideseat_does_not_accept_this_item">This icon cannot be frozen.</string>
+    <string name="hideseat_does_not_accept_downloading_folder">This folder cannot be frozen until finish the download.</string>
+    <string name="hideseat_does_not_accept_folder_with_non_app">This folder contains icons that cannot be frozen.</string>
+
+    <!--  added by dongjun for settings begin-->
+    <string name="settings_individuation_title">Personalized</string>
+    <string name="settings_layout_title">HomeShell Layout</string>
+    <string name="settings_screen_slide_effect">Screen Slide Effect</string>
+    <string name="settings_icon_layout">HomeShell Icons Layout</string>
+    <string name="settings_arrange_page">Arrange HomeShell</string>
+    <string name="setttings_arrange_page_subtitle">The page icon will be arranged with no gaps</string>
+    <string name="settings_effect_cancel_btn">Cancel</string>
+    <!--  added by dongjun for settings end-->
+    <!-- added by hongchao.ghc BugID:126343  for settings show icon mark begin-->
+    <string name="settings_icon_mark_title">Icons mark</string>
+    <string name="settings_icon_mark">Show new application icon mark</string>
+    <string name="settings_icon_slide_up_mark">Show application icon slide up mark</string>
+    <string name="settings_clonable_mark">Show clonable application icon mark</string>
+    <!-- added by hongchao.ghc BugID:126343 for settings show icon mark end-->
+
+    <!-- by wenliang.dwl -->
+    <string name="settings_notification_mark_title">Show notification marks on apps</string>
+
+    <string name="settings_continuous_homeshell">Continuous Homeshell</string>
+    <string name="forbid_layout_change_when_big">Can\'t change layout when using card background</string>
+
+    <!--  added by yangshan for batch operation of the icons in folder begin-->
+    <string name="confirm_btn_label">"OK"</string>
+    <string name="cancel_btn_label">"Cancel"</string>
+    <string name="upside_apps_title">Select the applications</string>
+    <string name="over_folder_capicity">The maximum number of applications in folder is:</string>
+    <string name="over_max_screen_count">Sorry, the maximum number of screens has reached! </string>
+    <!--  added by yangshan for batch operation of the icons in folder end-->
+    <!--  added by zhangqiang.zq for search begin-->
+    <string name="search_app_goto_app_store">Search in App Market</string>
+    <string name="search_app_mark">Application</string>
+    <string name="search_bookmark_mark">Bookmark</string>
+    <string name="search_cloudapp_mark">Cloud app</string>
+    <string name="search_vp_mark">Recommended app</string>
+    <string name="search_other_mark">Other</string>
+    <!-- added by zhangqiang.zq for search end -->
+    <!--  added by xinzheng.lxz for lifecenter begin-->
+    <string name="lifecenter_update_msg">Lifecenter updated, reload it ?</string>
+    <!-- added by xinzheng.lxz for lifecenter end -->
+
+    <!--  added by zhangqiang.zq for aged mode begin-->
+    <string name="other_apps">Other Apps</string>
+    <string name="others">Others</string>
+    <string name="aged_freeze_homeshell">Edit lock</string>
+    <string name="aged_freeze_homeshell_sub">Prevent from changing layout by mistake.</string>
+    <string name="aged_freeze_homeshell_toast">The icons and layout is locked. You may disable it in settings.</string>
+    <!--  added by zhangqiang.zq for aged mode end-->
+    <string name="noti_service_name">HomeShell app notification</string>
+    <string name="set_readed">Mark as read</string>
+    <string name="folder_dismiss_cancelled">No enough space to take all items in the folder, dismiss cancelled.</string>
+    <string name="str_load">Please wait&#8230;</string>
+    
+    <string name="str_folder_name">Folder</string>
+    <string name="sd_app_icon_del">SD card app icon is deleted</string>
+
+    <string name="str_add">和</string>
+
+    <!-- added by xiaodong.lxd -->
+    <string name="shortcut_name_empty">Failed to add shortcut for its name is empty.</string>
+
+    <!--  added by yangshan.ys for 3*3 layout start-->
+    <string name="layout_change_toast">The 4*5 is not supported in this theme.</string>
+    <string name="forbid_layout_change_when_3_3">The layout cannot be changed in this mode.</string>
+    <!--  added by yangshan.ys for 3*3 layout end-->
+
+    <string name="card_msg_attarchment">"(Attachment)"</string>
+
+    <string name="theme_loading">Swtching theme ...</string>
+    
+    <!-- Edit mode -->
+    
+    <string name="edit_mode_tips_widgets">Widgets</string>
+    <string name="edit_mode_tips_effects">Effects</string>
+    <string name="edit_mode_tips_wallpapers">WallPapers</string>
+    <string name="edit_mode_tips_themes">Theme</string>
+    <string name="edit_mode_tips_celllayouts">Pick up the icon and then drag</string>
+    <string name="edit_mode_tips_multiselect">Long press any selected icon to drag</string>
+    <string name="edit_mode_tips_multiselect_to_folder">Select icon and drag to folder</string>
+    <string name="edit_mode_tips_drag_screen">Drag left or right for page arrangement</string>
+    <string name="edit_mode_tips_icon_sort">Icon management</string>
+    <string name="edit_mode_add_to_folder">Add to folder</string>
+    <string name="edit_mode_title_theme_repo">Store</string>
+    <string name="edit_mode_ttitle_wallpaper_repo">Store</string>
+
+    <string name="preview">Preview</string>
+    <string name="application_installed">New application has been installed, please make category again.</string>
+
+    <string name="str_one_key_lockscreen">Lock</string>
+    <string name="str_one_key_accelerate">Boost</string>
+
+    <!--  added by xiaodong.lxd for landmode -->
+    <string name="toast_no_space_for_widget">"Drag to other screens as this widget will not show in %1$s"</string>
+    <string name="orientation_land">landscape</string>
+    <string name="orientation_port">portrait</string>
+
+    <string name="hotseat_atom">Atom</string>
+    <string name="hotseat_atom_summary">Display ATOM area in the center of Dock</string>
+
+    <string name="app_uninstalling">This application is uninstalling</string>
+    <string name="premlab_homeshell_used">Used by homeshell</string>
+    <string name="premlab_notification_update">Receive Notification</string>
+
+    <!-- setting for icon dynamic title color -->
+    <string name="setting_icon_dynamic_title_color">Automatic change icon font color</string>
+
+    <string name="appclone_app_installing">Installing Application, Please retry later</string>
+    <string name="appclone_hint_title">Clone Application</string>
+    <string name="appclone_hint_msg">Press and drag icon with application-clone mark to the upper right corner of the Desktop, you can clone an application, support different accounts login at the same time.</string>
+    <string name="appclone_hint_btn_text">I know</string>
+    <string name="appclone_err_reach_limit">Clone number has reached limit</string>
+    <string name="appclone_err_busy">System busy, please wait</string>
+    <string name="appclone_err_other">Out of system storage space</string>
+    <string name="appclone_hint_clone_freezed">Can\'t clone hidden application</string>
+    <string name="appclone_hint_hide_cloned">The application cloned can not be hidden</string>
+    <string name="appclone_hint_hide_clone_folder">The folder has clone application</string>
+    <string name="appclone_hint_clone_updating">Application can\'t be cloned when downloading</string>
+    <string name="appclone_hint_uninstall_updating">Application cloned can\'t be uninstalled when downloading</string>
+    <string name="drop_title_uninstall">Uninstall</string>
+    <string name="drop_title_Clone">Clone</string>
+    <string name="title_folder_recommend_app">Recommend Apps</string>
+    <string name="drop_title_dismiss">Dismiss</string>
+    <string name="drop_title_delete">Delete</string>
+    <string name="update_app_info">Update app category info</string>
+    <string name="update_app_info_summary">Update app category info while WLAN connected</string>
+
+    <string name="folder_name_error">Folder name can\'t start with \'#\'</string>
+    
+
+    <!--  Xunhu start: Added by TRF1305 on 20170310 @@{{{  -->
+    <!--  Description: add a new name folder which is on third screen  -->
+    <string name="xunhu_local_applications">Local applications</string>
+    <!--  Xunhu end: Added by TRF1305 20170310 @@}}}  -->
+    
+</resources>

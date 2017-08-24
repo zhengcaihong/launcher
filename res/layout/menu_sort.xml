@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    android:visibility="invisible"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/menu_item_sort_page"
+        style="@style/menuTextStyle"
+        android:text="@string/menu_item_sort_page"
+        android:drawableTop="@drawable/em_menu_sort_page_bg"/>
+
+    <TextView
+        android:id="@+id/menu_item_sort_all"
+        style="@style/menuTextStyle"
+        android:text="@string/menu_item_sort_all"
+        android:drawableTop="@drawable/em_menu_sort_all_bg"/>
+    
+    <TextView
+        android:id="@+id/menu_item_category"
+        style="@style/menuTextStyle"
+        android:text="@string/menu_item_category"
+        android:drawableTop="@drawable/em_menu_category_bg"/>
+
+</LinearLayout>

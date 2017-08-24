@@ -1,0 +1,83 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.0.0'
+    }
+
+}
+apply plugin: 'android-library'
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+}
+
+android {
+    publishNonDefault true
+    lintOptions {
+        abortOnError false
+    }
+    compileSdkVersion 21
+    buildToolsVersion "22.0.1"
+    defaultConfig {
+        targetSdkVersion 17
+    }
+    productFlavors {
+        android4x {
+            compileSdkVersion 17
+            targetSdkVersion 17
+        }
+        android5x {
+            compileSdkVersion 21
+            targetSdkVersion 21
+        }
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            assets.srcDirs = ['assets']
+        }
+        android4x {
+            res.srcDirs = ['res']
+        }
+        android5x {
+            res.srcDirs = ['tmpres']
+        }
+    }
+}
+gradle.projectsEvaluated {
+    //copy res before Android5.x build
+    preAndroid5xDebugBuild.dependsOn('copyResBeforeCompile')
+    preAndroid5xReleaseBuild.dependsOn('copyResBeforeCompile')
+    //delete temp res after Android5.x build
+    assembleAndroid5xRelease.finalizedBy('deleteTmpRes')
+    assembleAndroid5xDebug.finalizedBy('deleteTmpRes')
+}
+
+/* copy res and res_5.0 into tmpres */
+task copyResBeforeCompile<< {
+    copy{
+        from('res') {
+            include('**/*')
+        }
+        into('tmpres')
+    }
+    copy{
+        from('res_5.0') {
+            include('**/*')
+        }
+        into('tmpres')
+    }
+    printf('copy tmp res');
+}
+/* delete tmpres */
+task deleteTmpRes<< {
+    def tmpDir = new File('tmpres')
+    tmpDir.deleteDir()
+    printf('delete tmp res');
+}

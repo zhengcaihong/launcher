@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/category_mode"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    android:visibility="invisible" >
+
+    <Button
+        android:id="@+id/category_mode_cancel"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/ic_category_cancel"
+        android:text="@android:string/cancel"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/category_mode_ok"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/ic_category_ok"
+        android:text="@android:string/ok"
+        android:textSize="14sp"/>
+
+</RelativeLayout>

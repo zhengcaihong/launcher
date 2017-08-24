@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+* Copyright (C) 2008 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="guide_activate">activate</string>
+    <string name="guide_activate_ok">use immediately </string>
+    <string name="guide_category">classify immediately</string>
+    <string name="activate_yunos_service">activate YunOS core service</string>
+    <string name="guide_activate_tips_title">because your system version is older, can not provide the following services:</string>
+    <string name="guide_activate_tips_content">· Looking for the most of the tide APP\n· Intelligent personal voice assistant\n· The latest news and free quality novel</string>
+    <string name="guide_activate_tips">free flow activation system service?</string>
+    <string name="activate_count">"0%"</string>
+    <string name="guide_activate_success">activate success</string>
+    <string name="guide_activate_success_title">System service activation was successful, please check the corresponding service：</string>
+    <string name="guide_activate_success_content">Has opened the news service function for you,\nPlease see the desktop browser, you have installed the application center, read, personal assistant, please see the desktop icon.</string>
+    <string name="guide_category_title">classification applications to make it easier for you to find applications</string>
+    <string name="guide_category_tips">whether to classify now</string>
+    <string name="activate_giveup_title">system service</string>
+    <string name="activate_giveup_content">give up the activation will not be able to enjoy the core system services provided by YunOS, to confirm to give up？</string>
+    <string name="activate_giveup">give up</string>
+
+</resources>

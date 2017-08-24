@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <View android:id="@id/hw_titleDivider"
+       style="@style/HWDroid.Widget.FooterBarDivider"/>
+
+    <LinearLayout
+        android:id="@id/hw_footerbar_content"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" />
+
+</merge>

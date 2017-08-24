@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="false">
+        <bitmap android:src="@drawable/hw_scrubber_control_disabled" android:tint="?attr/hw_colorPrimaryDisabledInner" />
+    </item>
+    <item android:state_pressed="true">
+        <bitmap android:src="@drawable/hw_scrubber_control_pressed" android:tint="?attr/hw_colorPrimaryDark" />
+    </item>
+    <item android:state_selected="true">
+        <bitmap android:src="@drawable/hw_scrubber_control_focused" android:tint="?attr/hw_colorPrimary" />
+    </item>
+    <item>
+        <bitmap android:src="@drawable/hw_scrubber_control_normal" android:tint="?attr/hw_colorPrimary" />
+    </item>
+
+</selector>

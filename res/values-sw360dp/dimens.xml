@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="folder_cell_height_small">78dp</dimen>
+</resources>

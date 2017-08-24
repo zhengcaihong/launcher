@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="entries_effect_preference">
+        <item>经典</item>
+        <item>盒子外</item>
+        <item>盒子内</item> 
+        <item>向上翻转</item>
+        <item>向下翻转</item>
+        <item>百叶窗</item>  
+        <item>翻转</item> 
+        <item>压缩进出</item>
+        <item>上下浮动</item>
+        <item>淡入淡出</item>  
+    </string-array>
+
+    <string-array name="entries_effect_preference_3d">
+        <item>经典</item>
+        <item>盒子外</item>
+        <item>盒子内</item> 
+        <item>向上翻转</item>
+        <item>向下翻转</item>
+        <item>百叶窗</item>  
+        <item>翻转</item> 
+        <item>压缩进出</item>
+        <item>上下浮动</item>
+        <item>淡入淡出</item>
+        <item>3D水晶</item>
+        <item>3D布艺</item>  
+    </string-array>
+
+    <string-array name="entries_layout_preference">
+        <item>4x4</item>
+        <item>4x5</item>
+    </string-array>
+
+    <string-array name="icon_sort_array">
+        <item>排列本屏图标</item>
+        <item>排列全部图标</item>
+        <item>归类全部图标</item>
+    </string-array>
+</resources>

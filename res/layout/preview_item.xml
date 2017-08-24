@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/preview_item"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/preview_image"
+            android:layout_width="@dimen/preview_item_image_width"
+            android:layout_height="@dimen/preview_item_image_height"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginStart="@dimen/preview_item_margin_left"
+            android:layout_marginEnd="@dimen/preview_item_margin_right"
+            android:layout_marginTop="@dimen/preview_item_margin_top"
+            android:background="@drawable/em_preview_list_item_bg"/>
+    <TextView
+            android:id="@+id/preview_select_num"
+            android:layout_width="@dimen/preview_select_num_size"
+            android:layout_height="@dimen/preview_select_num_size"
+            android:layout_gravity="top|center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/em_ic_corner_mark_bg"
+            android:textColor="@color/preview_widget_item_title_textcolor"
+            android:textSize="@dimen/preview_widget_text_size"
+            android:visibility="gone"/>
+
+</FrameLayout>

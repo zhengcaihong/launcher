@@ -1,0 +1,22 @@
+<resources>
+     <integer name="screen_max_count">12</integer>
+    <integer name="cell_count_x">4</integer>
+    <integer name="cell_count_y">6</integer>
+    <integer name="cell_max_count_x">4</integer>
+    <integer name="cell_max_count_y">6</integer>
+    <integer name="hotseat_cell_count">4</integer>
+    <integer name="hotseat_all_apps_index">4</integer>
+    <bool name="config_largeHeap">true</bool>
+    <bool name="is_large_screen">true</bool>
+
+<!-- AllApps/Customize/AppsCustomize -->
+    <!-- Out of 100, the percent to shrink the workspace during spring loaded mode. -->
+    <integer name="config_workspaceSpringLoadShrinkPercentage">90</integer>
+
+<!-- Workspace -->
+    <!-- Whether or not the drop targets drop down as opposed to fade in -->
+    <bool name="config_useDropTargetDownTransition">true</bool>
+
+<!-- Hotseat -->
+    <bool name="hotseat_transpose_layout_with_orientation">false</bool>
+</resources>

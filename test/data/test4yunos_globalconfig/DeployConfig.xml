@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deployment>
+    <properties>
+    <device>shensi</device>
+  <!-- <device>common</device>   -->
+
+    <!--需要实施人员手工修改项  Begin-->
+        <sim1>18610048419</sim1>  <!--修改成: 卡1如联通卡手机号码-->
+        <sim2>13811654216</sim2>  <!--修改成: 卡2如移动卡手机号码-->
+        <CMCC_Number>18667159213</CMCC_Number> <!--中国移动手机号码-->
+        <inCallNumber1>915557152627</inCallNumber1> <!--来电，要呼叫给此号码，号码前面记得+ 9 -->
+        <inCallNumber2>913811654216</inCallNumber2> <!--来电，要呼叫给此号码，号码前面记得+ 9 -->
+
+        <wifiOfWpaCompanySsid1>alibaba-inc</wifiOfWpaCompanySsid1> <!--修改成：公司wifi -->
+        <wifiOfWpaCompanyName1>wb-wanbaodong</wifiOfWpaCompanyName1> <!--修改成：自己电脑的域账号 -->
+        <wifiOfWpaCompanyPass1>Ali654321</wifiOfWpaCompanyPass1> <!--修改成：自己电脑的域账号对应的密码 -->
+
+        <wifiOfHotName1>gddwr</wifiOfHotName1> <!--如需测试热点，请把设置的热点信息填写这里 -->
+        <wifiOfHotPass1>abcd1234</wifiOfHotPass1> <!--如需测试热点，请把设置的热点信息填写这里 -->
+
+        <numberNotAnswer>15267182587</numberNotAnswer><!--这个号码插在第三方手机上，需开机，目的为测试去电对方不接听-->
+        <numberInHangzhou>15267182587</numberInHangzhou> <!--一个杭州号码-->
+
+        <testalipayAccount>15890909090</testalipayAccount> <!--修改成：云账号测试环境的账号 （可以找伟民要）-->
+        <testalipayPassword>123456</testalipayPassword> <!--修改成：上面填写的账号对应的密码-->
+        <testalipayAccount1>15867676767</testalipayAccount1> <!--修改成：云账号测试环境的账号（和上面一个云账号不一致）-->
+        <testalipayPassword1>123456</testalipayPassword1> <!--修改成：上面填写的账号对应的密码-->
+
+        <callerID>81517048</callerID> <!--修改成：公司座机号码-->
+        <employeeID>55818</employeeID> <!--修改成：座机号码对应的工号-->
+
+        <callTransferCard1>918626898135</callTransferCard1> <!--目前这块case ignore了， 要测试时，修改成：把此号码呼叫转移给卡1，前面记得+ 9 -->
+        <callTransferCard2>915906608286</callTransferCard2> <!--目前这块case ignore了， 要测试时，修改成：把此号码呼叫转移给卡2，前面记得+ 9 -->
+        <notificationName>1</notificationName>  <!--0为老的没变的项目使用，1为后面更改过的项目 -->
+     <!--需要实施人员手工修改项  End-->
+
+
+        <!--============================================= 以下设置基本不需要修改=============================================-->
+        <!-- Common  Begin -->
+        <wifiSsid>at-yun</wifiSsid>
+        <wifiIdentify></wifiIdentify>
+        <wifiPass>automation/is/very/good!</wifiPass>
+        <!-- Common End -->
+
+        <!--Phone Begin-->
+        <dialpadKeys>0123456789*#</dialpadKeys>
+        <stringNumberKeys>*123#456*#789#*</stringNumberKeys>
+        <langStringNumber23>8888888888888888888888</langStringNumber23>
+        <plusKeys>+</plusKeys>
+        <number10000>10000</number10000>
+        <number10010>10010</number10010>
+        <number10011>10011</number10011>
+        <number10086>10086</number10086>
+        <number95555>95555</number95555>
+        <number112>112</number112>
+        <number95105105>95105105</number95105105>
+        <number12345>12345</number12345>
+        <number114>114</number114>
+        <number12315>12315</number12315>
+        <number12121>12121</number12121>
+        <number12117>12117</number12117>
+        <number95588>95588</number95588>
+        <number4008861888>4008861888</number4008861888>
+
+        <IPPrefix>17951</IPPrefix>
+
+        <CTCC_Number>15382360670</CTCC_Number>
+
+        <attribution>浙江杭州</attribution>
+        <attributionOnCallScreen>浙江杭州</attributionOnCallScreen>
+
+        <aliNumber>057185022600</aliNumber>
+        <aliPayNumber>057188156688</aliPayNumber>
+        <aliNumberAdd86>8685022600</aliNumberAdd86>
+
+        <areaCodeTelPhoneSpace>0571 8502 2600</areaCodeTelPhoneSpace>
+        <noAreaCodeTelPhoneSpace>8502 2600</noAreaCodeTelPhoneSpace>
+        <noAreaCodeTelPhone>85022600</noAreaCodeTelPhone>
+        <areaCode>0571</areaCode>
+
+        <numberNotAnswer>15267182587</numberNotAnswer><!--修改成：找张卡插入一个手机上开机，然后把这张卡的号码填写在这-->
+        <numberInHangzhou>15267182587</numberInHangzhou> <!--同上-->
+        <!--Phone End-->
+
+        <!-- Contacts Begin -->
+        <tyidName>haoqing</tyidName>
+        <tyidPassword>061014</tyidPassword>
+
+        <wifiName>at-yun</wifiName>
+        <wifiPassword>automation/is/very/good!</wifiPassword>
+
+        <alipayAccount>test7011@aliyun.com</alipayAccount>
+        <alipayAccountName>赵骥</alipayAccountName>
+        <alipayPassword>aliyun!2013</alipayPassword>
+
+        <alipayAccount1>test7007@aliyun.com</alipayAccount1>
+        <alipayAccountName1>*士明</alipayAccountName1>
+        <alipayPassword1>aliyun!2013</alipayPassword1>
+
+        <alipayAccount2>18658849201</alipayAccount2>
+        <alipayPassword2>os123456</alipayPassword2>
+
+        <accountType>alipay</accountType>
+
+        <alipayTranferAccount>18658849201</alipayTranferAccount>
+        <alipayTranferPassword>os123456</alipayTranferPassword>
+        <alipayTranferContactsName>赵骥</alipayTranferContactsName>
+        <alipayTranferPhone1>18258171460</alipayTranferPhone1>
+        <alipayTranferPhone2>18658849201</alipayTranferPhone2>
+
+        <testaccountType>alipay</testaccountType>
+        <!-- Contacts End -->
+
+        <!--MMS Begin-->
+
+        <!--MMS End-->
+
+        <!--Settings Begin-->
+        <wifiOfOpenName1>at-yun-open</wifiOfOpenName1>
+
+        <wifiOfWepName1>at-yun</wifiOfWepName1>
+        <wifiOfWepPass1>automation/is/very/good!</wifiOfWepPass1>
+        <wifiOfWepName2>AutoTest_WEP</wifiOfWepName2>
+        <wifiOfWepPass2>1234567890</wifiOfWepPass2>
+
+        <wifiOfWpa2PersonalName1>at-yun</wifiOfWpa2PersonalName1>
+        <wifiOfWpa2PersonalPass1>automation/is/very/good!</wifiOfWpa2PersonalPass1>
+
+        <wifiOfWpaPersonalName1>at-yun</wifiOfWpaPersonalName1>
+        <wifiOfWpaPersonalPass1>automation/is/very/good!</wifiOfWpaPersonalPass1>
+        <wifiOfWpaPersonalName2>alibaba11</wifiOfWpaPersonalName2>
+        <wifiOfWpaPersonalPass2>1234567890</wifiOfWpaPersonalPass2>
+
+        <lockScreenPassword>1234</lockScreenPassword>
+        <updateLockScreenPassword>1111</updateLockScreenPassword>
+        <!--Settings End-->
+
+        <!--VPN Begin-->
+        <IP>192.184.33.237</IP>
+        <username>ssys</username>
+        <password>123</password>
+        <vpnname>test</vpnname>
+        <ipSecPwd>123456</ipSecPwd>
+        <!--VPN End-->
+
+        <!--MTBF Begin-->
+        <MailBoxAccountName_163>aliyunmailtest1@163.com</MailBoxAccountName_163>
+        <MailBoxPassWard_163>a123456789</MailBoxPassWard_163>
+         <MailBoxAccountName_126>aliyunmailtest1@126.com</MailBoxAccountName_126>
+        <MailBoxPassWard_126>a123456789</MailBoxPassWard_126>
+         <MailBoxAccountName_qq>autoaliyun@qq.com</MailBoxAccountName_qq>
+        <MailBoxPassWard_qq>12345abcd</MailBoxPassWard_qq>
+         <MailBoxAccountName_139>13917904834@139.com</MailBoxAccountName_139>
+          <MailBoxAccountNameRecipient_139>13820080932@139.com</MailBoxAccountNameRecipient_139>
+        <MailBoxPassWard_139>Comcat123</MailBoxPassWard_139>
+        <TC_Phone_Dialer_0002>2</TC_Phone_Dialer_0002>
+        <TC_Phone_Dialer_0003>2</TC_Phone_Dialer_0003>
+        <TC_Phone_Dialer_0045>2</TC_Phone_Dialer_0045>
+        <TC_Phone_Region_0003>2</TC_Phone_Region_0003>
+        <TC_MMS_Send_And_Receive_0009>2</TC_MMS_Send_And_Receive_0009>
+        <TC_MMS_Send_And_Receive_0010>2</TC_MMS_Send_And_Receive_0010>
+        <TC_Phone_InCall_0001>2</TC_Phone_InCall_0001>
+        <TC_Phone_InCall_0002>2</TC_Phone_InCall_0002>
+        <TC_Phone_InCall_0003>2</TC_Phone_InCall_0003>
+        <TC_Phone_InCall_0004>2</TC_Phone_InCall_0004>
+        <TC_Phone_InCall_0005>2</TC_Phone_InCall_0005>
+        <TC_Phone_InCall_0006>2</TC_Phone_InCall_0006>
+        <TC_Phone_InCall_0007>2</TC_Phone_InCall_0007>
+        <TC_Phone_InCall_0008>2</TC_Phone_InCall_0008>
+        <AUTO_CASE_LOOPCOUNT></AUTO_CASE_LOOPCOUNT>
+        <AUTO_CASE_TC_Messaging_01_LOOPCOUNT>20</AUTO_CASE_TC_Messaging_01_LOOPCOUNT>
+        <AUTO_CASE_TC_Messaging_02_LOOPCOUNT>20</AUTO_CASE_TC_Messaging_02_LOOPCOUNT>
+        <AUTO_CASE_TC_Messaging_03_LOOPCOUNT>30</AUTO_CASE_TC_Messaging_03_LOOPCOUNT>
+        <AUTO_CASE_TC_Messaging_04_LOOPCOUNT>30</AUTO_CASE_TC_Messaging_04_LOOPCOUNT>
+        <AUTO_CASE_TC_PIMStability_01_LOOPCOUNT>5</AUTO_CASE_TC_PIMStability_01_LOOPCOUNT>
+        <AUTO_CASE_TC_PIMStability_02_LOOPCOUNT></AUTO_CASE_TC_PIMStability_02_LOOPCOUNT>
+        <AUTO_CASE_TC_PIMStability_03_LOOPCOUNT>5</AUTO_CASE_TC_PIMStability_03_LOOPCOUNT>
+        <AUTO_CASE_TC_Telephony_01_LOOPCOUNT>20</AUTO_CASE_TC_Telephony_01_LOOPCOUNT>
+        <AUTO_CASE_TC_Telephony_02_LOOPCOUNT>100</AUTO_CASE_TC_Telephony_02_LOOPCOUNT>
+        <AUTO_CASE_TC_Others_01_LOOPCOUNT>2</AUTO_CASE_TC_Others_01_LOOPCOUNT>
+        <AUTO_CASE_TC_Others_02_LOOPCOUNT>1</AUTO_CASE_TC_Others_02_LOOPCOUNT>
+        <AUTO_CASE_TC_Others_03_LOOPCOUNT>20</AUTO_CASE_TC_Others_03_LOOPCOUNT>
+        <AUTO_CASE_TC_MultiTasking_01_LOOPCOUNT>30</AUTO_CASE_TC_MultiTasking_01_LOOPCOUNT>
+        <AUTO_CASE_TC_MailBox_01_LOOPCOUNT>5</AUTO_CASE_TC_MailBox_01_LOOPCOUNT>
+        <AUTO_CASE_TC_MailBox_02_LOOPCOUNT>5</AUTO_CASE_TC_MailBox_02_LOOPCOUNT>
+        <AUTO_CASE_TC_MailBox_03_LOOPCOUNT>10</AUTO_CASE_TC_MailBox_03_LOOPCOUNT>
+        <AUTO_CASE_TC_MailBox_04_LOOPCOUNT>5</AUTO_CASE_TC_MailBox_04_LOOPCOUNT>
+        <AUTO_CASE_TC_Camera_01_LOOPCOUNT>20</AUTO_CASE_TC_Camera_01_LOOPCOUNT>
+        <AUTO_CASE_TC_Camera_02_LOOPCOUNT>2</AUTO_CASE_TC_Camera_02_LOOPCOUNT>
+        <AUTO_CASE_TC_Music_01_LOOPCOUNT>2</AUTO_CASE_TC_Music_01_LOOPCOUNT>
+
+        <AUTO_CASE_TC_BROWSER_01_LOOPCOUNT>1</AUTO_CASE_TC_BROWSER_01_LOOPCOUNT>
+        <AUTO_CASE_TC_BROWSER_05_LOOPCOUNT>5</AUTO_CASE_TC_BROWSER_05_LOOPCOUNT>
+        <AUTO_CASE_TC_BROWSER_30_LOOPCOUNT>30</AUTO_CASE_TC_BROWSER_30_LOOPCOUNT>
+
+        <Screenshot_TC_Others_01_Fail>D:\\MTBFFail\\TC_Others_01\\</Screenshot_TC_Others_01_Fail>
+        <Screenshot_TC_Others_01_Verify>D:\\MTBFVerify\\TC_Others_01\\</Screenshot_TC_Others_01_Verify>
+        <Screenshot_TC_Others_02_Fail>D:\\MTBFFail\\TC_Others_02\\</Screenshot_TC_Others_02_Fail>
+        <Screenshot_TC_Others_02_Verify>D:\\MTBFVerify\\TC_Others_02\\</Screenshot_TC_Others_02_Verify>
+        <Screenshot_TC_Others_03_Fail>D:\\MTBFFail\\TC_Others_03\\</Screenshot_TC_Others_03_Fail>
+        <Screenshot_TC_Others_03_Verify>D:\\MTBFVerify\\TC_Others_03\\</Screenshot_TC_Others_03_Verify>
+        <Screenshot_TC_MultiTasking_01_Fail>D:\\MTBFFail\\TC_MultiTasking_01\\</Screenshot_TC_MultiTasking_01_Fail>
+        <Screenshot_TC_MultiTasking_01_Verify>D:\\MTBFVerify\\TC_MultiTasking_01\\</Screenshot_TC_MultiTasking_01_Verify>
+        <Screenshot_TC_Telephony_01_Fail>D:\\MTBFFail\\TC_Telephony_01\\</Screenshot_TC_Telephony_01_Fail>
+        <Screenshot_TC_Telephony_01_Verify>D:\\MTBFVerify\\TC_Telephony_01\\</Screenshot_TC_Telephony_01_Verify>
+        <Screenshot_TC_Telephony_02_Fail>D:\\MTBFFail\\TC_Telephony_02\\</Screenshot_TC_Telephony_02_Fail>
+        <Screenshot_TC_Telephony_02_Verify>D:\\MTBFVerify\\TC_Telephony_02\\</Screenshot_TC_Telephony_02_Verify>
+
+        <Screenshot_TC_PIMStability_01_Verify>D:\\MTBFVerify\\TC_PIMStability_01\\</Screenshot_TC_PIMStability_01_Verify>
+        <Screenshot_TC_PIMStability_03_Verify>D:\\MTBFVerify\\TC_PIMStability_03\\</Screenshot_TC_PIMStability_03_Verify>
+        <Screenshot_TC_Messaging_01_Verify>D:\\MTBFVerify\\TC_Messaging_01\\</Screenshot_TC_Messaging_01_Verify>
+        <Screenshot_TC_Messaging_02_Verify>D:\\MTBFVerify\\TC_Messaging_02\\</Screenshot_TC_Messaging_02_Verify>
+        <Screenshot_TC_Messaging_03_Verify>D:\\MTBFVerify\\TC_Messaging_03\\</Screenshot_TC_Messaging_03_Verify>
+        <Screenshot_TC_Messaging_04_Verify>D:\\MTBFVerify\\TC_Messaging_04\\</Screenshot_TC_Messaging_04_Verify>
+        <Screenshot_TC_PIMStability_01_Fail>D:\\MTBFFail\\TC_PIMStability_01\\</Screenshot_TC_PIMStability_01_Fail>
+        <Screenshot_TC_PIMStability_03_Fail>D:\\MTBFFail\\TC_PIMStability_03\\</Screenshot_TC_PIMStability_03_Fail>
+        <Screenshot_TC_Messaging_01_Fail>D:\\MTBFFail\\TC_Messaging_01\\</Screenshot_TC_Messaging_01_Fail>
+        <Screenshot_TC_Messaging_02_Fail>D:\\MTBFFail\\TC_Messaging_02\\</Screenshot_TC_Messaging_02_Fail>
+        <Screenshot_TC_Messaging_03_Fail>D:\\MTBFFail\\TC_Messaging_03\\</Screenshot_TC_Messaging_03_Fail>
+        <Screenshot_TC_Messaging_04_Fail>D:\\MTBFFail\\TC_Messaging_04\\</Screenshot_TC_Messaging_04_Fail>
+
+        <Screenshot_TC_MailBox_01_Fail>D:\\MTBFFail\\TC_MailBox_01\\</Screenshot_TC_MailBox_01_Fail>
+
+        <Screenshot_TC_MailBox_02_Fail>D:\\MTBFFail\\TC_MailBox_02\\</Screenshot_TC_MailBox_02_Fail>
+        <Screenshot_TC_MailBox_03_Fail>D:\\MTBFFail\\TC_MailBox_03\\</Screenshot_TC_MailBox_03_Fail>
+        <Screenshot_TC_MailBox_04_Fail>D:\\MTBFFail\\TC_MailBox_04\\</Screenshot_TC_MailBox_04_Fail>
+
+        <Screenshot_TC_MailBox_01_Verify>D:\\MTBFVerify\\TC_MailBox_01\\</Screenshot_TC_MailBox_01_Verify>
+        <Screenshot_TC_MailBox_02_Verify>D:\\MTBFVerify\\TC_MailBox_02\\</Screenshot_TC_MailBox_02_Verify>
+        <Screenshot_TC_MailBox_03_Verify>D:\\MTBFVerify\\TC_MailBox_03\\</Screenshot_TC_MailBox_03_Verify>
+        <Screenshot_TC_MailBox_04_Verify>D:\\MTBFVerify\\TC_MailBox_04\\</Screenshot_TC_MailBox_04_Verify>
+
+        <Screenshot_TC_Camera_01_Fail>D:\\MTBFFail\\TC_Camera_01\\</Screenshot_TC_Camera_01_Fail>
+        <Screenshot_TC_Camera_02_Fail>D:\\MTBFFail\\TC_Camera_02\\</Screenshot_TC_Camera_02_Fail>
+        <Screenshot_TC_Camera_01_Verify>D:\\MTBFVerify\\TC_Camera_01\\</Screenshot_TC_Camera_01_Verify>
+        <Screenshot_TC_Camera_02_Verify>D:\\MTBFVerify\\TC_Camera_02\\</Screenshot_TC_Camera_02_Verify>
+
+        <Screenshot_TC_Music_01_Fail>D:\\MTBFFail\\TC_Music_01\\</Screenshot_TC_Music_01_Fail>
+        <Screenshot_TC_Music_01_Verify>D:\\MTBFVerify\\TC_Music_01\\</Screenshot_TC_Music_01_Verify>
+
+        <Screenshot_TC_Browser_01_Verify>D:\\MTBFFail\\TC_Browser_Verify_01\\</Screenshot_TC_Browser_01_Verify>
+        <Screenshot_TC_Browser_02_Verify>D:\\MTBFFail\\TC_Browser_Verify_01\\</Screenshot_TC_Browser_02_Verify>
+        <Screenshot_TC_Browser_03_Verify>D:\\MTBFFail\\TC_Browser_Verify_01\\</Screenshot_TC_Browser_03_Verify>
+        <Screenshot_TC_Browser_04_Verify>D:\\MTBFFail\\TC_Browser_Verify_01\\</Screenshot_TC_Browser_04_Verify>
+        <Screenshot_TC_Browser_05_Verify>D:\\MTBFFail\\TC_Browser_Verify_01\\</Screenshot_TC_Browser_05_Verify>
+        <Screenshot_TC_Browser_06_Verify>D:\\MTBFFail\\TC_Browser_Verify_01\\</Screenshot_TC_Browser_06_Verify>
+
+        <Screenshot_TC_Browser_01_Fail>D:\\MTBFFail\\TC_Browser_01\\</Screenshot_TC_Browser_01_Fail>
+        <Screenshot_TC_Browser_02_Fail>D:\\MTBFFail\\TC_Browser_02\\</Screenshot_TC_Browser_02_Fail>
+        <Screenshot_TC_Browser_03_Fail>D:\\MTBFFail\\TC_Browser_03\\</Screenshot_TC_Browser_03_Fail>
+        <Screenshot_TC_Browser_04_Fail>D:\\MTBFFail\\TC_Browser_04\\</Screenshot_TC_Browser_04_Fail>
+        <Screenshot_TC_Browser_05_Fail>D:\\MTBFFail\\TC_Browser_05\\</Screenshot_TC_Browser_05_Fail>
+        <Screenshot_TC_Browser_06_Fail>D:\\MTBFFail\\TC_Browser_06\\</Screenshot_TC_Browser_06_Fail>
+        <Screenshot_TC_Browser_01_Verify>D:\\MTBFVerify\\TC_Browser_01\\</Screenshot_TC_Browser_01_Verify>
+        <Screenshot_TC_Browser_02_Verify>D:\\MTBFVerify\\TC_Browser_02\\</Screenshot_TC_Browser_02_Verify>
+        <Screenshot_TC_Browser_03_Verify>D:\\MTBFVerify\\TC_Browser_03\\</Screenshot_TC_Browser_03_Verify>
+        <Screenshot_TC_Browser_04_Verify>D:\\MTBFVerify\\TC_Browser_04\\</Screenshot_TC_Browser_04_Verify>
+        <Screenshot_TC_Browser_05_Verify>D:\\MTBFVerify\\TC_Browser_05\\</Screenshot_TC_Browser_05_Verify>
+        <Screenshot_TC_Browser_06_Verify>D:\\MTBFVerify\\TC_Browser_06\\</Screenshot_TC_Browser_06_Verify>
+
+        <!--MTBF End-->
+
+        <!--Stress and MemLeak Begin-->
+        <MemLeakMrcIntervalTime>3</MemLeakMrcIntervalTime>
+        <StressTime4Test>0</StressTime4Test>
+        <!--Stress and MemLeak End-->
+         <language>zh-rCN</language>
+        <!--zh-rCN, en, zh-rTW -->
+        <!--httpDownlaod Begin-->
+        <Appstore_URL></Appstore_URL>
+        <!--httpDownlaod End-->
+    </properties>
+</deployment>

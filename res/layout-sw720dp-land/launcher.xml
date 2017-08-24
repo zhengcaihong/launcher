@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- Full screen view projects under the status bar and contains the background -->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:launcher="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/launcher"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/workspace_bg">
+    <com.aliyun.homeshell.globalsearch.LauncherContainer
+        android:id="@+id/launcher_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.aliyun.homeshell.GestureLayer 
+        android:id="@+id/gesture_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <com.aliyun.homeshell.DragLayer
+            android:id="@+id/drag_layer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
+    
+            <!-- Keep these behind the workspace so that they are not visible when
+                 we go into AllApps -->
+    <!--         <include
+                android:id="@+id/dock_divider"
+                layout="@layout/workspace_divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/button_bar_height"
+                android:layout_gravity="bottom" />
+    
+            <include
+                android:id="@+id/paged_view_indicator"
+                layout="@layout/scroll_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/button_bar_height" /> -->
+                
+             <com.aliyun.homeshell.PageIndicatorView
+                android:id="@+id/pageindicator_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/page_indicator_height"
+                android:layout_marginBottom="@dimen/button_bar_height_plus_padding"
+                android:layout_gravity="bottom" />
+    
+            <!-- The workspace contains 5 screens of cells -->
+            <com.aliyun.homeshell.Workspace
+                android:id="@+id/workspace"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                    android:paddingStart="@dimen/workspace_left_padding"
+                    android:paddingEnd="@dimen/workspace_right_padding"
+                    android:paddingTop="@dimen/workspace_top_padding"
+                    android:paddingBottom="0dp"
+                launcher:defaultScreen="1"
+                launcher:cellCountX="@integer/cell_count_x"
+                launcher:cellCountY="@integer/cell_count_y"
+                launcher:pageSpacing="@dimen/workspace_page_spacing"
+                launcher:scrollIndicatorPaddingLeft="@dimen/workspace_divider_padding_left"
+                launcher:scrollIndicatorPaddingRight="@dimen/workspace_divider_padding_right">
+                <!-- <include android:id="@+id/search_global_text" layout="@layout/workspace_search" /> -->
+                <include android:id="@+id/lifecenter_cell" layout="@layout/workspace_screen" />
+                <include android:id="@+id/cell1" layout="@layout/workspace_screen" />
+            </com.aliyun.homeshell.Workspace>
+            <include android:id="@+id/edit_mode_tips" layout="@layout/edit_mode_tips"/>
+                <!-- YUNOS BEGIN -->
+                <!-- modules(Home Shell): [Category] -->
+                <!-- date: 2015/07/30 author: wangye.wy -->
+                <!-- BugID: 6221911: category on desk top -->
+            <!--
+                <RelativeLayout
+                    android:id="@+id/category_mode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dip"
+                    android:visibility="invisible"
+                    android:background="@color/widget_bg">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="35dp"
+                        android:text="@string/preview"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"
+                        android:background="@color/transparent"/>
+                    <Button
+                        android:id="@+id/category_mode_cancel"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/preview_cancel"/>
+                    <Button
+                        android:id="@+id/category_mode_ok"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/preview_ok"/>
+                </RelativeLayout>
+            -->
+                <!-- YUNOS END -->
+            <include
+                    android:id="@+id/editmode_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    layout="@layout/editmode_layout"
+                    android:visibility="gone" />
+
+            <ViewStub android:id="@+id/hideseat_stub"
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/button_bar_height_plus_padding"
+                      android:layout_gravity="bottom"
+                      android:layout="@layout/custom_hideseat" />
+
+            <include layout="@layout/hotseat"
+                android:id="@+id/hotseat"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_bar_height_plus_padding"
+                android:layout_gravity="bottom" />
+    
+            <include
+                android:id="@+id/qsb_bar"
+                layout="@layout/qsb_bar" />
+           
+        </com.aliyun.homeshell.DragLayer>
+
+        <include android:id="@+id/homshell_menu" layout="@layout/alimenu_layout"/>
+        <include android:id="@+id/sort_menu" layout="@layout/menu_sort"/>
+        <include android:id="@+id/category_mode" layout="@layout/category_mode"/>
+
+    </com.aliyun.homeshell.GestureLayer>
+    </com.aliyun.homeshell.globalsearch.LauncherContainer>
+</FrameLayout>

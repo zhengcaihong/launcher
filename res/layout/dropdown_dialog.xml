@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dropdown_dialog_background"
+    android:measureWithLargestChild="false"
+    android:orientation="vertical" 
+    android:paddingTop="@dimen/delete_droptarget_padding_top"
+    android:paddingStart="@dimen/cell_layout_left_padding"
+    android:paddingBottom="@dimen/delete_droptarget_padding_bottom">
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:src="@null"/>
+    <RelativeLayout
+        android:id="@+id/layout_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/delete_droptarget_button_margin_bottom"
+	    android:paddingRight="@dimen/dropdown_dialog_textview_padding_right" >
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="@dimen/delete_droptarget_button_width1"
+        android:layout_height="@dimen/delete_droptarget_button_height"
+        android:layout_alignTop="@+id/btn_cancel"
+        android:background="@drawable/dropdowndialog_btn_ok"
+        android:layout_alignParentRight="true"
+        android:text="@string/uninstall_app_confirm"
+        android:textColor="@color/common_text_color_red"
+        android:textSize="@dimen/delete_droptarget_text_size" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="@dimen/delete_droptarget_button_width2"
+        android:layout_height="@dimen/delete_droptarget_button_height"
+        android:layout_marginRight="@dimen/delete_droptarget_button_margin"
+        android:layout_marginTop="@dimen/delete_droptarget_button_margin_top"
+        android:layout_toLeftOf="@id/btn_confirm"
+        android:background="@drawable/dropdowndialog_btn_cancel"
+        android:text="@string/uninstall_app_cancel"
+        android:textColor="@color/common_text_color_uninstall_title"
+        android:textSize="@dimen/delete_droptarget_text_size" />
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/delete_droptarget_text_margin_top"
+        android:layout_alignLeft="@+id/btn_cancel"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        android:textSize="@dimen/delete_droptarget_text_size"
+        android:textColor="@color/common_text_color_uninstall_title"
+        android:text="@string/uninstall_title" />
+    </RelativeLayout>
+</RelativeLayout>

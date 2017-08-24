@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- Hotseat -->
+    <bool name="hotseat_transpose_layout_with_orientation">true</bool>
+    <integer name="hotseat_max_count_x">1</integer>
+    <integer name="hotseat_max_count_y">4</integer>
+</resources>

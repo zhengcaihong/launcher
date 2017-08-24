@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/folder_apps_select_grid"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:animationCache="false"
+    android:cacheColorHint="#00000000"
+    android:choiceMode="multipleChoice"
+    android:listSelector="@android:color/transparent"
+    android:numColumns="3"
+    android:verticalSpacing="10dp"
+    android:horizontalSpacing="10dp"
+    android:scrollbars="none"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:paddingRight="28dp"
+    android:paddingLeft="12dp"
+/>

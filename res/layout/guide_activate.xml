@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/guide_welcome"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >    <TextView
+        android:id="@+id/guide_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:drawablePadding="30dp"
+        android:drawableTop="@drawable/pic_guide_01"
+        android:gravity="center_horizontal"
+        android:text="@string/activate_yunos_service"
+        android:textColor="@color/guide_text_color"
+        android:paddingBottom="52dp"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/guide_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/guide_text_color"
+        android:text="@string/guide_activate_tips_title"
+        android:paddingBottom="11dp"
+        android:textSize="14sp"/>
+     <TextView
+        android:id="@+id/guide_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:gravity="left"
+        android:text="@string/guide_activate_tips_content"
+        android:textColor="@color/guide_text_color"
+        android:textSize="14sp" />
+     <TextView
+        android:id="@+id/guide_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:text="@string/guide_activate_tips"
+        android:textColor="@color/guide_text_color"
+        android:paddingTop="40dp"
+        android:textSize="14sp" />
+</LinearLayout>

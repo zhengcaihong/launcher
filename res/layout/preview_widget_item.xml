@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/preview_widget_item"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:paddingLeft="@dimen/preview_widget_item_padding_left"
+     android:paddingRight="@dimen/preview_widget_item_padding_right"
+     android:paddingTop="@dimen/preview_widget_item_padding_top"
+     android:paddingBottom="@dimen/preview_widget_item_padding_bottom"
+     >
+    
+    <LinearLayout
+        android:layout_width="@dimen/preview_widget_item_width"
+        android:layout_height="@dimen/preview_widget_item_height"
+        android:layout_gravity="center"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:background="@drawable/em_preview_list_item_bg" >
+
+        <ImageView
+            android:id="@id/preview_image"
+            android:paddingTop="@dimen/em_widget_preview_padding_top"
+            android:layout_width="@dimen/preview_widget_image_width"
+            android:layout_height="@dimen/preview_widget_image_height"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="13dp"
+            android:paddingLeft="6dp"
+            android:paddingRight ="6dp"
+            android:focusable="true">
+            <TextView 
+                android:id="@+id/preview_widget_size"
+                android:layout_width="@dimen/preview_widget_hint_size"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:layout_alignParentEnd="true"
+                android:focusable="true"
+                android:gravity="right"
+                android:singleLine="true"
+                android:textColor="@color/preview_widget_item_title_textcolor"
+                android:textSize="@dimen/preview_widget_text_size"/>
+            <TextView 
+                android:id="@+id/preview_widget_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:focusable="true"
+                android:layout_alignParentStart = "true"
+                android:singleLine="true"
+                android:textColor="@color/preview_widget_item_title_textcolor"
+                android:textSize="@dimen/preview_widget_text_size"
+                android:layout_toLeftOf="@id/preview_widget_size"/>
+            
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

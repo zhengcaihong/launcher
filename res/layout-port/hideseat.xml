@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.aliyun.homeshell.hideseat.Hideseat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:launcher="http://schemas.android.com/apk/res/com.aliyun.homeshell"
+    android:id="@+id/hideseat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:paddingEnd="@dimen/workspace_right_padding"
+    android:paddingStart="@dimen/workspace_left_padding"
+    launcher:cellCountX="4"
+    launcher:cellCountY="1"
+    launcher:defaultScreen="0"
+    launcher:pageSpacing="@dimen/workspace_page_spacing"
+    launcher:scrollIndicatorPaddingLeft="@dimen/workspace_divider_padding_left"
+    launcher:scrollIndicatorPaddingRight="@dimen/workspace_divider_padding_right" >
+</com.aliyun.homeshell.hideseat.Hideseat>

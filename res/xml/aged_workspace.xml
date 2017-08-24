@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<favorites xmlns:launcher="http://schemas.android.com/apk/res/com.aliyun.homeshell">
+
+    <!-- gadget -->
+    <gadget
+        launcher:packageName="com.aliyun.homeshell"
+        launcher:screen="0"
+        launcher:x="0"
+        launcher:y="0"
+        launcher:spanX="3"
+        launcher:spanY="1"
+        launcher:title="@string/clock_apollo_4x1"/>
+
+    <!-- hotseat begin -->
+    <favorite
+        launcher:packageName="com.yunos.alicontacts"
+        launcher:className="com.yunos.alicontacts.activities.DialtactsContactsActivity"
+        launcher:screen="0"
+        launcher:x="0"
+        launcher:y="0"
+        launcher:container="-101" />
+
+    <favorite
+        launcher:packageName="com.android.mms"
+        launcher:className="com.android.mms.ui.ConversationList"
+        launcher:screen="1"
+        launcher:x="1"
+        launcher:y="0"
+        launcher:container="-101" />
+
+    <favorite
+        launcher:packageName="com.yunos.camera"
+        launcher:className="com.yunos.camera.CameraActivity"
+        launcher:screen="2"
+        launcher:x="2"
+        launcher:y="0"
+        launcher:container="-101" />
+    <!-- hotseat end -->
+
+    <!-- screen 0 begin -->
+    <favorite
+        launcher:packageName="com.aliyun.image"
+        launcher:className="com.aliyun.image.app.Gallery"
+        launcher:screen="0"
+        launcher:x="0"
+        launcher:y="2" />
+
+    <favorite
+        launcher:packageName="com.yunos.alicontacts"
+        launcher:className="com.yunos.alicontacts.activities.PeopleActivity2"
+        launcher:screen="0"
+        launcher:x="1"
+        launcher:y="2"
+         />
+
+    <favorite
+        launcher:packageName="fm.xiami.yunos"
+        launcher:className="fm.xiami.yunos.MusicActivity"
+        launcher:screen="0"
+        launcher:x="2"
+        launcher:y="2" />
+    <favorite
+        launcher:packageName="fm.xiami.yunos"
+        launcher:className="fm.xiami.bmamba.activity.StartActivity"
+        launcher:screen="0"
+        launcher:x="2"
+        launcher:y="2" />
+    <favorite
+        launcher:packageName="com.xiami.walkman"
+        launcher:className="com.xiami.walkman.activities.MainActivity"
+        launcher:screen="0"
+        launcher:x="2"
+        launcher:y="2" />
+    <!-- screen 0 end -->
+
+    <!-- screen 1 begin -->
+    <favorite
+            launcher:packageName="com.yunos.calculator"
+            launcher:className="com.yunos.calculator.Calculator"
+            launcher:screen="1"
+            launcher:x="0"
+            launcher:y="0"/>
+
+    <favorite
+        launcher:packageName="com.android.calendar"
+        launcher:className="com.android.calendar.AllInOneActivity"
+        launcher:screen="1"
+        launcher:x="1"
+        launcher:y="0" />
+
+    <favorite
+        launcher:packageName="com.android.settings"
+        launcher:className="com.android.settings.Settings"
+        launcher:screen="1"
+        launcher:x="2"
+        launcher:y="0" />
+
+<!--
+    <favorite
+            launcher:packageName="com.yunos.weatherservice"
+            launcher:className="com.yunos.weather.view.detail.DetailWeatherActivity"
+            launcher:screen="1"
+            launcher:x="0"
+            launcher:y="1"/>
+-->
+
+    <favorite
+            launcher:packageName="com.moji.aliyun"
+            launcher:className="com.moji.aliyun.CSplashScreen"
+            launcher:screen="1"
+            launcher:x="0"
+            launcher:y="1"/>
+
+    <favorite
+        launcher:packageName="com.autonavi.minimap"
+        launcher:className="com.autonavi.map.activity.SplashActivity"
+        launcher:screen="1"
+        launcher:x="1"
+        launcher:y="1" />
+
+    <favorite
+        launcher:packageName="com.aliyun.wireless.vos.appstore"
+        launcher:className="com.aliyun.wireless.vos.appstore.LogoActivity"
+        launcher:screen="1"
+        launcher:x="2"
+        launcher:y="1" />
+
+    <favorite
+        launcher:packageName="com.UCMobile"
+        launcher:className="com.UCMobile.main.UCMobile"
+        launcher:screen="1"
+        launcher:x="0"
+        launcher:y="2"/>
+    <favorite
+        launcher:packageName="com.UCMobile.intl"
+        launcher:className="com.UCMobile.main.UCMobile"
+        launcher:screen="1"
+        launcher:x="0"
+        launcher:y="2"/>
+
+    <folder
+        launcher:screen="1"
+        launcher:x="1"
+        launcher:y="2"
+        launcher:title="#string/other_apps">
+
+        <favorite
+            launcher:packageName="com.android.development"
+            launcher:className="com.android.development.Development"
+            launcher:screen="0"
+            launcher:x="0"
+            launcher:y="0"
+            launcher:container="3" />
+
+        <favorite
+            launcher:packageName="com.android.apr"
+            launcher:className="com.android.apr.android.AprConfigActivity"
+            launcher:screen="0"
+            launcher:x="1"
+            launcher:y="0"
+            launcher:container="3" />
+
+        <favorite
+            launcher:packageName="com.sina.weibo"
+            launcher:className="com.sina.weibo.SplashActivity"
+            launcher:screen="0"
+            launcher:x="2"
+            launcher:y="0"
+            launcher:container="3" />
+
+        <favorite
+            launcher:packageName="com.taobao.taobao"
+            launcher:className="com.taobao.tao.Welcome"
+            launcher:screen="0"
+            launcher:x="0"
+            launcher:y="1"
+            launcher:container="3" />
+
+        <favorite
+            launcher:packageName="com.eg.android.AlipayGphone"
+            launcher:className="com.eg.android.AlipayGphone.AlipayLogin"
+            launcher:screen="0"
+            launcher:x="1"
+            launcher:y="1"
+            launcher:container="3" />
+
+        <favorite
+            launcher:packageName="com.alibaba.android.babylon"
+            launcher:className="com.alibaba.android.babylon.biz.InitActivity"
+            launcher:screen="0"
+            launcher:x="2"
+            launcher:y="1"
+            launcher:container="3" />
+
+        <favorite
+            launcher:packageName="cn.andouya"
+            launcher:className="cn.andoumiao2.messenger.MainActivity"
+            launcher:screen="0"
+            launcher:x="0"
+            launcher:y="2"
+            launcher:container="3" />
+
+        <favorite
+            launcher:packageName="com.aliyun.SecurityCenter"
+            launcher:className="com.aliyun.SecurityCenter.ui.SecurityCenterActivity"
+            launcher:screen="0"
+            launcher:x="1"
+            launcher:y="2"
+            launcher:container="3" />
+
+        <favorite
+            launcher:packageName="com.yunos.theme.thememanager"
+            launcher:className="com.yunos.theme.thememanager.ThemeLogoActivity"
+            launcher:screen="0"
+            launcher:x="2"
+            launcher:y="2"
+            launcher:container="3"/>
+
+        <!-- YUNOS BEGIN -->
+        <!-- modules(Home Shell): [Reader] -->
+        <!-- date: 2015/12/31 author: wangye.wy -->
+        <!-- BugID: 7744473: add system app of reader -->
+        <favorite
+            launcher:packageName="com.chaozh.ireader.aliyun"
+            launcher:className="com.zhangyue.iReader.aliyun.ui.activity.WelcomeActivity"
+            launcher:screen="1"
+            launcher:x="0"
+            launcher:y="0"
+            launcher:container="3" />
+        <!-- YUNOS END -->
+
+        <favorite
+            launcher:packageName="com.aliyun.note"
+            launcher:className="com.aliyun.note.activity.NotesListActivity"
+            launcher:screen="1"
+            launcher:x="1"
+            launcher:y="0"
+            launcher:container="3" />
+
+        <favorite
+            launcher:packageName="com.aliyun.mobile.email"
+            launcher:className="com.aliyun.mobile.email.activity.Welcome"
+            launcher:screen="1"
+            launcher:x="2"
+            launcher:y="0"
+            launcher:container="3" />
+
+         <favorite
+            launcher:packageName="com.aliyun.video"
+            launcher:className="com.aliyun.video.VideoCenterActivity"
+            launcher:screen="1"
+            launcher:x="0"
+            launcher:y="1"
+            launcher:container="3" />
+
+        <favorite
+            launcher:packageName="com.yunos.camera"
+            launcher:className="com.yunos.camera.ScanActivity"
+            launcher:screen="1"
+            launcher:x="1"
+            launcher:y="1"
+            launcher:container="3" />
+
+        <favorite
+            launcher:packageName="com.android.deskclock"
+            launcher:className="com.android.deskclock.DeskClock"
+            launcher:screen="1"
+            launcher:x="2"
+            launcher:y="1"
+            launcher:container="3" />
+
+        <favorite
+            launcher:packageName="com.yunos.FMRadio"
+            launcher:className="com.yunos.FMRadio.FMRadioActivity"
+            launcher:screen="1"
+            launcher:x="0"
+            launcher:y="2"
+            launcher:container="3" />
+
+        <favorite
+            launcher:packageName="com.aliyunos.filemanager"
+            launcher:className="com.aliyunos.filemanager.FileManagerAppFrame"
+            launcher:screen="1"
+            launcher:x="1"
+            launcher:y="2"
+            launcher:container="3" />
+
+        <favorite
+            launcher:packageName="com.yunos.compass"
+            launcher:className="com.yunos.compass.CompassActivity"
+            launcher:screen="1"
+            launcher:x="2"
+            launcher:y="2"
+            launcher:container="3" />
+    </folder>
+    <!-- screen 1 end -->
+</favorites>
+

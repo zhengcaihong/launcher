@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/common/assets/res/any/colors.xml
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License"); 
+** you may not use this file except in compliance with the License. 
+** You may obtain a copy of the License at 
+**
+**     http://www.apache.org/licenses/LICENSE-2.0 
+**
+** Unless required by applicable law or agreed to in writing, software 
+** distributed under the License is distributed on an "AS IS" BASIS, 
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+** See the License for the specific language governing permissions and 
+** limitations under the License.
+*/
+-->
+<resources>
+    <!-- The color tints to apply to the text and drag view when hovering
+         over the delete target or the info target -->
+    <color name="delete_target_hover_tint">#88FF0000</color>
+    <color name="clone_target_hover_tint">#8819F0AC</color>
+    <color name="info_target_hover_tint">#DA0099CC</color>
+
+    <color name="color_primary">#01cc99</color>
+    <color name="color_primary_dark">#01ae82</color>
+    <color name="color_primary_disabled">#6601cc99</color>
+    <color name="appwidget_error_color">#FCCC</color>
+
+    <color name="back_color_disabled">#01cc99</color>
+    <color name="back_color_dark">#01ae82</color>
+    <color name="back_color">#01cc99</color>
+
+    <color name="workspace_icon_text_color">#FFF</color>
+    <color name="menu_item_bg_normal">#00000000</color>
+    <!-- zhangqiang.zq add for menu -->
+
+    <!-- wenliang.dwl add for dropdown dialog (BugID:5212217) -->
+    <color name="dropdown_dialog_background">#99000000</color>
+
+    <!-- xiaodong.lxd added -->
+    <color name="holo_white_light">#FFFFFFFF</color>
+    <color name="holo_white_dark">#FF000000</color>
+    <color name="icon_drag_color_filter">#1AFFFFFF</color>
+    <color name="icon_drag_shadown_color">#26000000</color>
+    <!-- added by yaodi.yd for optimize uninstalling process begin -->
+    <color name="transparent">#00000000</color>
+    <color name="common_text_color_red">#fff34545</color>
+    <!-- added by yaodi.yd for optimize uninstalling process end -->
+    
+    <!-- added by xiaodong.lxd -->
+    <color name="common_text_color_uninstall_title">#ffffffff</color>
+    
+    <!-- added by zhangqiang.zq for app search begin-->
+    <drawable name="dialpad_digtal_field_pressed_bg_color">#ff52b800</drawable>
+    <color name="dialpad_digtal_field_bg_color">#ffffffff</color>
+    <color name="search_highlight_color">#52b800</color>
+    <!-- added by zhangqiang.zq for app search end-->
+    <drawable name="set_read_noti_pressed">#ff2a2a2a</drawable>
+    <color name="common_text_color_shadow">#ff333333</color>
+    <color name="widget_bg">#33000000</color>
+    
+        <!-- edit mode -->
+    <color name="preview_item_title_textcolor">#FF696969</color>
+    <color name="preview_effects_item_title_textcolor">#FFFFFFFF</color>
+
+    <color name="preview_widget_item_title_textcolor">#ffffff</color>
+    
+    <!-- trash bin animation -->
+    <color name="search_bar_background_color_grey">#55000000</color>
+    <color name="search_bar_background_color_red">#EEF92727</color>
+
+    <!--add by dongjun for list pull animation  -->
+    <color name="edge_effect_color">#bdbdbd</color>
+    <drawable name="trash_background">@color/search_bar_background_color_grey</drawable>
+    <color name="guide_cancel_text_color">#999999</color>
+    <color name="guide_text_color">#333333</color>
+</resources>

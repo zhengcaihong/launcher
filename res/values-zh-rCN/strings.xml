@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+* Copyright (C) 2008 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- General -->
+    <skip />
+    <!-- Application name -->
+    <string name="application_name" msgid="8424725141379931883">"YunOS桌面"</string>
+    <!-- Accessibility-facing application name -->
+    <!-- Name for all applications running as this uid. -->
+    <!-- Default folder name -->
+    <string name="folder_name" msgid="8551881338202938211"></string>
+    <!-- Title of dialog that appears after user selects Wallpaper from menu -->
+    <string name="chooser_wallpaper" msgid="6063168087625352235">"选择壁纸来源"</string>
+    <!-- Button label on Wallpaper Gallery screen; user selects this button to set a specific wallpaper -->
+    <!-- Option in "Select wallpaper from" dialog box -->
+    <!-- Displayed when user selects a shortcut for an app that was uninstalled [CHAR_LIMIT=none]-->
+    <string name="activity_not_found" msgid="217823393239365967">"未安装该应用"</string>
+    <!--  Labels for the tabs in the customize drawer -->
+    <string name="widgets_tab_label" msgid="9145860100000983599">"小部件"</string>
+
+    <!-- AppsCustomize pane -->
+    <!-- Message to tell the user to press and hold on a widget to add it [CHAR_LIMIT=50] -->
+    <string name="long_press_widget_to_add" msgid="7395697462851217506">"请按住小工具添加"</string>
+    <!-- The format string for the dimensions of a widget in the drawer -->
+    <!-- There is a special version of this format string for Farsi -->
+    <string name="widget_dims_format" msgid="1386418557719032947">"%1$d × %2$d"</string>
+
+    <!-- External-drop widget error string.  This is the error that is shown
+         when you drag and item into the homescreen and it is unable to fit,
+         or an error is encountered. [CHAR_LIMIT=50] -->
+    <!-- External-drop widget pick title.  This is shown as the title of the
+         dialog which allows you to pick which widgets to handle a particular
+         drop if there are multiple choices. [CHAR_LIMIT=35] -->
+
+    <!-- Folders -->
+    <skip />
+    <!-- Label of Folder name field in Rename folder dialog box -->
+    <!-- Title of dialog box -->
+    <!-- Buttons in Rename folder dialog box -->
+    <!-- Buttons in Rename folder dialog box -->
+
+    <!-- Shortcuts -->
+    <skip />
+    <!-- Title of dialog box -->
+    <!-- Options in "Add to Home" dialog box; Title of the group containing the list of all apps -->
+    <string name="group_applications" msgid="2103752818818161976">"应用"</string>
+    <!-- Options in "Add to Home" dialog box; Title of the group containing the list of all shortcut
+s -->
+    <!-- Options in "Add to Home" dialog box; Title of the group containing the list of all widgets/gadgets -->
+    <!-- Options in "Add to Home" dialog box; Title of the group containing the list of apps that can set the wallpaper-->
+    <string name="group_wallpapers" msgid="1568191644272224858">"壁纸"</string>
+    <!-- Error message when user has filled all their home screens -->
+    <string name="completely_out_of_space" msgid="1759078539443491182">"您的主屏幕上没有空间了"</string>
+    <!-- Error message when user has filled a home screen -->
+    <string name="out_of_space" msgid="8365249326091984698">"此主屏幕上已没有空间"</string>
+    <!-- Error message when user has filled the hotseat -->
+    <string name="hotseat_out_of_space" msgid="6304886797358479361">"底部区域已无空间"</string>
+    <!-- Error message when user tries to drop an invalid item on the hotseat -->
+    <!-- Message displayed when a shortcut is created by an external application -->
+    <!-- Message displayed when a shortcut is uninstalled by an external application -->
+    <string name="shortcut_uninstalled" msgid="2129499669449749995">"已删除“<xliff:g id="NAME">%s</xliff:g>”快捷方式"</string>
+    <!-- Message displayed when an external application attemps to create a shortcut that already exists -->
+    <string name="shortcut_duplicate" msgid="4757756326465060694">"“<xliff:g id="NAME">%s</xliff:g>”快捷方式已存在"</string>
+
+    <string name="shortcut_updated"><xliff:g id="NAME">%s</xliff:g>快捷方式已更新"</string>
+
+    <!-- Title of dialog when user is selecting shortcut to add to homescreen -->
+    <!-- Title of dialog when user is selecting an application to add to homescreen -->
+    <string name="title_select_application" msgid="1793455815754848652">"选择应用"</string>
+
+    <!-- All applications label -->
+    <string name="all_apps_button_label" msgid="2578400570124163469">"应用"</string>
+    <!-- Label for button in all applications label to go back home (to the workspace / desktop)
+         for accessibilty (spoken when the button gets focus). -->
+    <string name="all_apps_home_button_label" msgid="1022222300329398558">"主屏幕"</string>
+
+    <!-- Permissions: -->
+    <skip />
+    <!-- Permission short label -->
+    <string name="permlab_install_shortcut" msgid="1201690825493376489">"安装快捷方式"</string>
+    <!-- Permission description -->
+    <string name="permdesc_install_shortcut" msgid="8634424803272077038">"允许应用自行添加快捷方式"</string>
+    <!-- Permission short label -->
+    <string name="permlab_uninstall_shortcut" msgid="7696645932555926449">"卸载快捷方式"</string>
+    <!-- Permission description -->
+    <string name="permdesc_uninstall_shortcut" msgid="274355570620220977">"允许应用自行删除快捷方式，而无需用户干预。"</string>
+    <!-- Permission short label -->
+    <string name="permlab_read_settings" msgid="3452408290738106747">"读取主屏幕的设置和快捷方式"</string>
+    <!-- Permission description -->
+    <string name="permdesc_read_settings" msgid="5788109303585403679">"允许应用读取主屏幕中的设置和快捷方式"</string>
+    <!-- Permission short label -->
+    <string name="permlab_write_settings" msgid="1360567537236705628">"写入主屏幕的设置和快捷方式"</string>
+    <!-- Permission description -->
+    <string name="permdesc_write_settings" msgid="8530105489115785531">"允许应用更改主屏幕中的设置和快捷方式"</string>
+    <!-- Permission short label -->
+    <string name="permlab_write_suggestedapps">允许应用更改智能推荐数据</string>
+    <!-- Permission short label -->
+    <string name="permlab_read_suggestedapps">允许应用读取智能推荐数据</string>
+    <!-- Permission icon update -->
+    <string name="permlab_icon_update">图标更新消息</string>
+    <!-- Permission description -->
+    <string name="permdesc_icon_update">允许应用发送图标更新消息给桌面</string>
+
+    <!-- Widgets: -->
+    <skip />
+
+    <!-- Text to show user in place of a gadget when we can't display it properly -->
+    <string name="gadget_error_text" msgid="8359351016167075858">"加载小部件时出现问题"</string>
+
+    <!-- Text to inform the user that they can't uninstall a system application -->
+
+    <!-- Title of the Android Dreams (screensaver) module -->
+
+    <!-- Default folder title -->
+    <string name="folder_hint_text" msgid="8633351560105748141">"未命名文件夹"</string>
+
+    <!-- Accessibility -->
+    <skip />
+
+    <!-- The format string for Workspace descriptions [CHAR_LIMIT=none] -->
+    <string name="workspace_description_format" msgid="2968608205939373034">"主屏幕 %1$d"</string>
+
+    <!-- The format string for default page scroll text [CHAR_LIMIT=none] -->
+    <string name="default_scroll_format" msgid="4057140866420001240">"第 %1$d 页，共 %2$d 页"</string>
+    <!-- The format string for Workspace page scroll text [CHAR_LIMIT=none] -->
+    <string name="workspace_scroll_format" msgid="1704767047951143301">"主屏幕 %1$d（共 %2$d 个）"</string>
+    <!-- The format string for AppsCustomize Apps page scroll text [CHAR_LIMIT=none] -->
+    <string name="apps_customize_apps_scroll_format" msgid="5494241912377704885">"应用：第 %1$d 页，共 %2$d 页"</string>
+    <!-- The format string for AppsCustomize Apps page scroll text [CHAR_LIMIT=none] -->
+    <string name="apps_customize_widgets_scroll_format" msgid="5383009742241717437">"小部件：第 %1$d 页，共 %2$d 页"</string>
+
+    <!-- Folder accessibility -->
+    <!-- The format string for when a folder is opened, speaks the dimensions -->
+    <string name="folder_opened" msgid="1262064100943801533">"文件夹已打开，尺寸为 <xliff:g id="WIDTH">%1$d</xliff:g> × <xliff:g id="HEIGHT">%2$d</xliff:g>"</string>
+    <!-- Instruction that clicking outside will close folder -->
+    <string name="folder_tap_to_close" msgid="1335478160661137579">"触摸可关闭文件夹"</string>
+    <!-- Instruction that clicking outside will commit folder rename -->
+    <string name="folder_tap_to_rename" msgid="5201612989905472442">"触摸可保存重命名"</string>
+    <!-- Instruction that clicking outside will commit folder rename -->
+    <!-- Folder renamed format -->
+    <string name="folder_renamed" msgid="7951233572858053642">"已将文件夹重命名为“<xliff:g id="NAME">%1$s</xliff:g>”"</string>
+    <!-- Folder name format -->
+    <string name="folder_name_format" msgid="3051680259794759037">"文件夹：<xliff:g id="NAME">%1$s</xliff:g>"</string>
+
+    <!--  title definition for tools -->
+    <string name="title_folder_tools">工具</string>
+    <!--  title definition for recommend_app -->
+    <!--  title definition for games -->
+
+    <!-- xiaodong.lxd add for widget -->
+    <string name="widgets_view_title">桌面小工具</string>
+    
+    <!-- zhangqiang.zq add for menu -->
+    <string name="menu_item_themes">主题</string>
+    <string name="menu_item_wallpapers">壁纸</string>
+    <string name="menu_item_homeshellsetting">桌面设置</string>
+    <string name="menu_item_widget">小工具</string>
+    <string name="menu_item_effects">特效</string>
+    <string name="menu_item_sort">图标整理</string>
+    <string name="menu_item_sort_page">排列本屏</string>
+    <string name="menu_item_sort_all">排列全部</string>
+    <string name="menu_item_category">归类全部</string>
+
+    <!-- for corner mark -->
+    <string name="new_mark_shortcut">新</string>
+    <string name="notification_mark">\u2026</string>
+
+    <!-- hongxing.whx add for the name of default folders -->
+    <string name="tools">工具</string>
+    <string name="tools_en">Tools</string>
+    <string name="tools_cn">工具</string>
+    <string name="tools_tw">工具</string>
+
+    <string name="games">游戏</string>
+    <string name="games_en">Games</string>
+    <string name="games_cn">游戏</string>
+    <string name="games_tw">遊戲</string>    
+
+    <string name="recommend_app">推荐应用</string>
+    <string name="recommend_app_en">Recommend Apps</string>
+    <string name="recommend_app_cn">推荐应用</string>
+    <string name="recommend_app_tw">推薦应用</string>
+
+    <!-- zhangqiang.zq add for folder -->
+    <string name="folder_name_etc">等</string>
+
+    <!--  edit by dongjun for traffic panel begin-->
+    <string name="delete_succeed">成功删除并卸载应用</string>
+
+    <string name="delete_cloudapp_succeed">成功删除应用</string>
+
+    <string name="delete_failed">删除应用失败！</string>
+
+    <string name="delete_bookmark_succeed">成功删除书签！</string>
+
+    <string name="cloudapp_add_succeed">云应用已添加至桌面</string>
+    <string name="cloudapp_exist">云应用已存在</string>
+    <string name="cloudapp_updated">云应用已更新至桌面</string>
+    <string name="bookmark_add_succeed">书签已添加至桌面</string>
+    <string name="bookmark_exist">书签已存在</string>
+    <string name="bookmark_updated">书签已更新至桌面</string>
+    <string name="shortcut_added"><xliff:g id="name">%s</xliff:g> 已成功添加至桌面</string>
+    <string name="application_not_show_no_space">当前桌面已无空位，新应用暂不显示</string>
+    <string name="icon_not_show_no_space">当前桌面已无空位，其他图标暂不显示</string>
+
+    <string name="application_unavailable">该应用无法使用</string>
+    <string name="application_unavailable_due_to_frozen">该应用已被冻结，请移出隐藏区后再试</string>
+
+    <string name="application_unavailable_being_unfrozen">正在解冻，请稍候</string>
+
+    <string name="shortcut_unavailable_due_to_frozen">原应用已冻结，请将原应用移出隐藏区后再试</string>
+    <string name="sdcard_application_unavailable">该应用无法使用，请检查存储卡或重新安装</string>
+    <string name="sdcard_application_unavailable_usb">U盘模式下，无法启动该应用</string>
+    <string name="application_not_deleted_in_usb">U盘模式下无法删除该应用</string>
+
+    <string name="allapp_updating_not_allowed_edit">请在安装完成后编辑</string>
+    <string name="restore_not_allowed_edit">请在备份恢复完成后编辑</string>
+    <string name="in_edit_staus">拖拽图标重合可新建分组</string>
+
+    <string name="open_wlan">开启WLAN</string>
+    <string name="close_wlan">关闭WLAN</string>
+    <string name="open_mobile_data">开启移动网络</string>
+    <string name="close_mobile_data">关闭移动网络</string>
+    <string name="open_soundmode_normal">开启声音常规模式</string>
+    <string name="open_soundmode_silent">开启静音模式</string>
+    <string name="open_soundmode_vibrate">开启振动模式</string>
+    <string name="app_updating">应用正在升级，暂不可用</string>
+    <string name="add_widgets_succes">添加小工具成功</string>
+
+    <!--  edit by dongjun for traffic panel end-->
+    <!-- added by hongixng.whx bugid:68358 -->
+    <string name="waiting">等待中</string>
+    <string name="downloading">下载中</string>
+    <string name="paused">暂停</string>
+    <string name="installing">安装中</string>
+    <!-- end of 68358 -->
+
+    <!-- added by hao.liuhaolh bugid:98731 -->
+    <string name="loading">正在载入...</string>
+    <!-- end of 98731 -->
+
+    <!-- added by dongjun for BugID:69179 begin -->
+    <string name="delete_download_info">已删除该应用</string>
+    <!-- added by dongjun for BugID:69179 begin -->
+    <!-- added by yaodi.yd for optimize uninstalling process begin -->
+    <string name="uninstall_title">要卸载%s吗?</string>
+    <string name="delete_profile_title">要卸载%s的分身吗?</string>
+    <string name="delete_and_uninstall_title">要卸载%s及其分身?</string>
+    <string name="uninstall_app_confirm">卸载</string>
+    <string name="uninstall_app_cancel">取消</string>
+    <string name="dismiss_folder_hint">要解散%s文件夹吗?</string>
+    <string name="dismiss_folder_confirm">解散</string>
+    <string name="dismiss_folder_cancel">取消</string>
+    <!-- added by yaodi.yd for optimize uninstalling process end -->
+    
+    <!-- added by xiaodong.lxd -->
+    <!-- added by yaodi.yd for fling to call speech service begin -->
+    <string name="notify_wait_speech">语音功能即将上线，敬请期待</string>
+    <!-- added by yaodi.yd for fling to call speech service end -->
+
+
+    <!-- added by wenliang.dwl -->
+    <string name="hideseat_is_full">私密箱已满，无法放入更多应用</string>
+    <string name="hideseat_not_enough_space">私密箱空间不足以放入这些应用</string>
+
+    <!-- added by hao.liuhaolh -->
+    <string name="app_exist">应用已存在</string>
+
+    <!-- added by chao.jiangchao -->
+
+    <!-- added by chao.jiangchao -->
+
+    <!-- added by zhanggong.zg -->
+    <string name="hideseat_cling_hint">拖入图标即可隐藏，并自动冻结应用以省流量及内存</string>
+    <!-- added by zhanggong.zg -->
+    <string name="hideseat_does_not_accept_downloading_items">只能在下载完成后冻结</string>
+    <!-- added by zhanggong.zg -->
+    <string name="hideseat_does_not_accept_installing_items">只能在安装完成后冻结</string>
+    <!-- added by zhanggong.zg -->
+    <string name="hideseat_does_not_accept_this_item">该图标无法冻结</string>
+    <string name="hideseat_does_not_accept_downloading_folder">文件夹中的应用尚未下载完成</string>
+    <string name="hideseat_does_not_accept_folder_with_non_app">文件夹中包含不能冻结的图标</string>
+
+    <!--  added by dongjun for settings begin-->
+    <string name="settings_individuation_title">个性化</string>
+    <string name="settings_layout_title">桌面图标布局</string>
+    <string name="settings_screen_slide_effect">屏幕滑动特效</string>
+    <string name="settings_icon_layout">桌面图标布局</string>
+    <string name="settings_arrange_page">桌面图标重排</string>
+    <string name="setttings_arrange_page_subtitle">将每页图标无空隙排列</string>
+    <string name="settings_effect_cancel_btn">取消</string>
+    <!--  added by dongjun for settings end-->
+    <!-- added by hongchao.ghc BugID:126343 for settings show icon mark begin-->
+    <string name="settings_icon_mark_title">图标标记</string>
+    <string name="settings_icon_mark">显示新应用图标标记</string>
+    <string name="settings_icon_slide_up_mark">显示应用图标上划标记</string>
+    <!-- added by hongchao.ghc BugID:126343 for settings show icon mark end-->
+    <string name="settings_clonable_mark">显示可分身应用图标标记</string>
+    <!-- by wenliang.dwl -->
+    <string name="settings_notification_mark_title">显示应用的通知标记</string>
+
+    <string name="settings_continuous_homeshell">循环桌面</string>
+    <string name="forbid_layout_change_when_big">使用大卡片时无法调整布局</string>
+    
+    <!--  added by yangshan for batch operation of the icons in folder begin-->
+    <string name="confirm_btn_label">"确定"</string>
+    <string name="cancel_btn_label">"取消"</string>
+    <string name="upside_apps_title">选择应用程序</string>
+    <string name="over_folder_capicity">亲，最多容纳APP数量为</string>
+    <string name="over_max_screen_count">没有更多屏幕页了，装这么多app，手机会累着的</string>
+    <!--  added by yangshan for batch operation of the icons in folder end-->
+    <!--  added by zhangqiang.zq for search begin-->
+    <string name="search_app_goto_app_store">去应用中心中搜索</string>
+    <string name="search_app_mark">应用</string>
+    <string name="search_bookmark_mark">书签</string>
+    <string name="search_cloudapp_mark">云应用</string>
+    <string name="search_vp_mark">推荐的应用程序</string>
+    <string name="search_other_mark">其它</string>
+    <!--  added by zhangqiang.zq for search end-->
+    <!--  added by xinzheng.lxz for lifecenter begin-->
+    <string name="lifecenter_update_msg">生活服务已更新，重新加载？</string>
+    <!-- added by xinzheng.lxz for lifecenter end -->
+
+    <!--  added by zhangqiang.zq for aged mode begin-->
+    <string name="other_apps">其它应用</string>
+    <string name="others">其它</string>
+    <string name="aged_freeze_homeshell">桌面编辑冻结</string>
+    <string name="aged_freeze_homeshell_sub">防止误操作改变桌面布局</string>
+    <string name="aged_freeze_homeshell_toast">桌面编辑已冻结，您可以在桌面设置中关闭</string>
+    <!--  added by zhangqiang.zq for aged mode end-->
+    <string name="noti_service_name">桌面应用通知</string>
+    <string name="set_readed">标记已读</string>
+    <string name="folder_dismiss_cancelled">主屏幕上没有足够空间，取消解散文件夹</string> 
+    <string name="str_load">请稍候&#8230;</string>
+
+    <string name="str_folder_name">文件夹</string>
+    <string name="sd_app_icon_del">SD卡应用图标已删除</string>
+
+    <string name="str_add">和</string>
+
+    <!-- added by xiaodong.lxd -->
+    <string name="shortcut_name_empty">快捷方式名字为空,添加失败</string>
+
+    <!--  added by yangshan.ys for 3*3 layout start-->
+    <string name="layout_change_toast">使用大卡片主题时无法切换到 4*5布局</string>
+    <string name="forbid_layout_change_when_3_3">在该模式下无法调整布局</string>
+    <!--  added by yangshan.ys for 3*3 layout end-->
+
+    <string name="card_msg_attarchment">"(附件)"</string>
+
+    <string name="theme_loading">正在切换主题 ...</string>
+    
+        <!-- Edit mode -->
+    
+    <string name="edit_mode_tips_widgets">小工具</string>
+    <string name="edit_mode_tips_effects">特效</string>
+    <string name="edit_mode_tips_wallpapers">壁纸</string>
+    <string name="edit_mode_tips_themes">主题</string>
+    <string name="edit_mode_tips_celllayouts">选中图标后拖动整理</string>
+    <string name="edit_mode_tips_multiselect">按住任意选中图标可拖动到其它屏幕</string>
+    <string name="edit_mode_tips_multiselect_to_folder">选中图标后可加入文件夹</string>
+    <string name="edit_mode_tips_drag_screen">左右拖动页面调整排序</string>
+    <string name="edit_mode_tips_icon_sort">图标整理</string>
+    <string name="edit_mode_add_to_folder">加入文件夹</string>
+    <string name="edit_mode_title_theme_repo">主题库</string>
+    <string name="edit_mode_ttitle_wallpaper_repo">壁纸库</string>
+
+    <string name="preview">预览</string>
+    <string name="application_installed">已经安装新应用，请重新归类。</string>
+
+    <string name="str_one_key_lockscreen">一键锁屏</string>
+    <string name="str_one_key_accelerate">一键加速</string>
+
+      <!--  added by xiaodong.lxd for landmode -->
+     <string name="toast_no_space_for_widget">"添加到当前屏后不能%1$s显示，建议添加到其他屏"</string>
+     <string name="orientation_land">横屏</string>
+     <string name="orientation_port">竖屏</string>
+
+     <string name="hotseat_atom">个人助理+</string>
+     <string name="hotseat_atom_summary">在桌面 Dock 中央显示 ATOM 区域</string>
+
+     <string name="app_uninstalling">该应用卸载中</string>
+     <string name="premlab_homeshell_used">桌面内部使用的权限</string>
+     <string name="premlab_notification_update">接收新的通知权限</string>
+     <!-- setting for icon dynamic title color -->
+     <string name="setting_icon_dynamic_title_color">图标字体自动变色</string>
+
+    <string name="appclone_app_installing">正在安装应用, 请稍后再试</string>
+    <string name="appclone_hint_title">应用分身</string>
+    <string name="appclone_hint_msg">长按带有分身标识的应用并拖至桌面右上角，可以创建该应用的分身，支持不同账号同时登录。</string>
+    <string name="appclone_hint_btn_text">我知道了</string>
+    <string name="appclone_err_reach_limit">分身数已达到最大值</string>
+    <string name="appclone_err_busy">系统忙碌中，请稍后</string>
+    <string name="appclone_err_other">系统空间不足</string>
+    <string name="appclone_hint_clone_freezed">隐藏区的应用不支持分身操作</string>
+    <string name="appclone_hint_hide_cloned">分身后的应用不支持隐藏操作</string>
+    <string name="appclone_hint_hide_clone_folder">文件夹中包含分身应用，无法隐藏</string>
+    <string name="appclone_hint_clone_updating">应用下载中,无法分身</string>
+    <string name="appclone_hint_uninstall_updating">已分身的应用下载中,无法卸载</string>
+    <string name="drop_title_uninstall">卸载</string>
+    <string name="drop_title_Clone">分身</string>
+    <string name="title_folder_recommend_app">推荐应用</string>
+    <string name="drop_title_dismiss">解散</string>
+    <string name="drop_title_delete">删除</string>
+    <string name="update_app_info">图标归类信息自动更新</string>
+    <string name="update_app_info_summary">WLAN下更新应用分类信息会让应用归类更准确</string>
+
+    <string name="folder_name_error">文件夹名称不能以 \'#\'开始</string>
+
+    <!--  Xunhu start: Added by TRF1305 on 20170310 @@{{{  -->
+    <!--  Description: add a new name folder which is on third screen  -->
+    <string name="xunhu_local_applications">本地应用</string>
+    <!--  Xunhu end: Added by TRF1305 20170310 @@}}}  -->
+    
+</resources>

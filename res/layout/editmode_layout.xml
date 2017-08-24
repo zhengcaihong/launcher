@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aliyun.homeshell.editmode.PreviewContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:launcher="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/preview_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/preview_container_height">
+
+        <com.aliyun.homeshell.editmode.HorzontalPreviewList
+            android:id="@+id/preview_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdgeLength="5dp"
+            android:requiresFadingEdge="horizontal"
+            launcher:alignStartPositionHorizontal="true"/>
+        <TextView android:id="@+id/add_to_folder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/edit_mode_add_to_folder"
+            android:drawableTop="@drawable/em_add_to_folder"
+            android:drawablePadding="10dp"
+            android:textSize="13sp"
+            android:textColor="#ffffff"
+        />
+    </FrameLayout>
+
+    <com.aliyun.homeshell.editmode.PreviewListIndicatorView
+            android:id="@+id/preview_list_indicator"
+            android:layout_width="@dimen/preview_indication_length"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/scorbar_bg"
+        />
+
+</com.aliyun.homeshell.editmode.PreviewContainer>

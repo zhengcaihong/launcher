@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aliyun.homeshell" xmlns:tools="http://schemas.android.com/tools"
+    android:versionCode="20160601"
+    android:versionName="3.4.0">
+
+    <original-package android:name="com.aliyun.homeshell" />
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="23" />
+
+    <permission
+        android:name="com.aliyun.homeshell.permission.PRELOAD_WORKSPACE"
+        android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
+        android:protectionLevel="system|signature" />
+    <permission
+        android:name="com.aliyun.homeshell.permission.INSTALL_SHORTCUT"
+        android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
+        android:protectionLevel="dangerous"
+        android:label="@string/permlab_install_shortcut"
+        android:description="@string/permdesc_install_shortcut" />
+    <permission
+        android:name="com.aliyun.homeshell.permission.UNINSTALL_SHORTCUT"
+        android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
+        android:protectionLevel="dangerous"
+        android:label="@string/permlab_uninstall_shortcut"
+        android:description="@string/permdesc_uninstall_shortcut"/>
+    <permission
+        android:name="com.aliyun.homeshell.permission.READ_SETTINGS"
+        android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
+        android:protectionLevel="signatureOrSystem"
+        android:label="@string/permlab_read_settings"
+        android:description="@string/permdesc_read_settings"/>
+    <permission
+        android:name="com.aliyun.homeshell.permission.WRITE_SETTINGS"
+        android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
+        android:protectionLevel="signatureOrSystem"
+        android:label="@string/permlab_write_settings"
+        android:description="@string/permdesc_write_settings"/>
+   <permission
+        android:name="com.aliyun.homeshell.permission.BACKUP_READ"
+        android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
+        android:protectionLevel="signatureOrSystem"
+        android:label="@string/permlab_read_settings"
+        android:description="@string/permdesc_read_settings"/>
+    <permission
+        android:name="com.aliyun.homeshell.permission.BACKUP_WRITE"
+        android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
+        android:protectionLevel="signatureOrSystem"
+        android:label="@string/permlab_write_settings"
+        android:description="@string/permdesc_write_settings"/>
+
+    <!--  FP service permission  -->
+    <protected-broadcast android:name="com.yunos.fp_service.action.NOTIFY_FP_EVENT" />
+    <uses-permission android:name="com.yunos.fp_service.permission.register_receive" />
+    <permission
+        android:name="com.aliyun.homeshell.permission.SUGGESTEDAPPS_READ"
+        android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
+        android:protectionLevel="system|signature"
+        android:label="@string/permlab_read_suggestedapps"
+        android:description="@string/permlab_read_suggestedapps"/>
+
+    <permission
+        android:name="com.aliyun.homeshell.permission.SUGGESTEDAPPS_WRITE"
+        android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
+        android:protectionLevel="system|signature"
+        android:label="@string/permlab_write_suggestedapps"
+        android:description="@string/permlab_write_suggestedapps"/>
+
+    <permission
+        android:name="com.aliyun.homeshell.permission.ICON_UPDATE"
+        android:protectionLevel="signatureOrSystem"
+        android:label="@string/permlab_icon_update"
+        android:description="@string/permdesc_icon_update"
+        />
+    <permission
+        android:name="com.aliyun.homeshell.permission.USED_BY_SELF"
+        android:protectionLevel="signatureOrSystem"
+        android:label="@string/premlab_homeshell_used"
+        android:description="@string/premlab_homeshell_used"/>
+
+    <permission
+        android:name="com.aliyun.homeshell.permission.NOTIFICATION"
+        android:protectionLevel="signatureOrSystem"
+        android:label="@string/premlab_notification_update"
+        android:description="@string/premlab_notification_update"/>
+
+    <uses-permission android:name="com.aliyun.homeshell.permission.ICON_UPDATE" />
+
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CALL_PRIVILEGED" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.BIND_APPWIDGET"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.aliyun.homeshell.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.aliyun.homeshell.permission.WRITE_SETTINGS" />
+    <!-- BugID:92481:vp install -->
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- YUNOS END -->
+    <!-- edit by dongjun for traffic panel begin -->
+    <!--   change wifi status  -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <!-- mobile data switch -->
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <!-- edit by dongjun for traffic panel end -->
+
+    <!-- to lock screen by mimicing power button   -->
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+
+    <!-- added for backup restore by hongxing.whx ##BugId: 67654 -->
+    <uses-permission android:name="com.aliyun.permission.TYID_SERVICE" />
+    <uses-permission android:name="com.aliyun.permission.TYID_MGR_SERVICE" />
+    <!-- end for backup restore -->
+
+    <!-- add by henxi for start SecurityCenter -->
+    <uses-permission android:name="com.aliyun.SecurityCenter.ACT_PERMISSIONS"/>
+    <!-- add by dongjun for appstore begin -->
+    <uses-permission android:name="com.aliyun.wireless.vos.appstore.ACCESS_CLOUD"/>
+    <uses-permission android:name="com.aliyun.ams.RMI_PERMISSION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- add by dongjun for appstore end -->
+    <uses-permission android:name="android.permission.READ_FRAME_BUFFER" />
+    <!-- added by yaodi.yd for optimize uninstalling-process begin -->
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+    <!-- added by yaodi.yd for optimize uninstalling-process end -->
+    <!-- added by yaodi.yd for unlock animation begin -->
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <!-- added by yaodi.yd for unlock animation end -->
+    <!-- added by hongxing.whx for dynamic icon  -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <!-- added by hongxing.whx for dynamic icon end -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- added by zhangqiang.zq for user track end -->
+
+    <!-- added by xinzheng.lxz for lifecard begin-->
+    <uses-permission android:name="android.permission.READ_LIFE_CARDS" />
+    <uses-permission android:name="android.permission.WRITE_LIFE_CARDS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <!-- added for usertrack-->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- added by xinzheng.lxz for lifecard end-->
+    <uses-permission android:name="android.permission.securitycenter.accelerate" />
+    <!-- add by wenliang.dwl for privacy space of security center -->
+    <uses-permission android:name="android.permission.provider.SECURITYCENTER" />
+
+    <!-- added by kerong.skr for gadget card -->
+    <uses-permission android:name="com.aliyun.mobile.email.permission.ACCESS_PROVIDER" />
+
+    <!-- added by xiaodong.lxd for pushtalk service -->
+    <uses-permission android:name="com.yunos.vui.service.permission" />
+
+    <!-- Begin: added by jiangjun.jj for mobile search -->
+    <uses-permission android:name="android.permission.MSEARCH_PROVIDER_ACCESS"/>
+    <uses-permission android:name="com.yunos.permission.LOCATED"/>
+    <uses-permission android:name="com.aliyun.permission.USE_FINGERPRINT"/>
+    <!-- End: added by jiangjun.jj for mobile search -->
+
+    <!-- Begin: added by zouyan.zy for xiami music -->
+    <uses-permission android:name="fm.xiami.yunos.permission.ACCESS_ALIYUN_MUSIC_PROVIDER" />
+    <!-- End: added by zouyan.zy for xiami music -->
+
+    <!-- Begin: added by zhanggong.zg for app-freeze feature in hide-seat
+         This permission is defined in Settings app. For more information, please
+         see com.aliyun.homeshell.appfreeze.AppFreezeUtil class.
+         -->
+    <uses-permission android:name="com.aliyun.permission.appfreeze" />
+    <!-- End:   added by zhanggong.zg for app-freeze feature in hide-seat -->
+
+    <!-- added by kerong.skr for frequently-used settings gadget card -->
+    <uses-permission android:name="com.android.settings.READ_FREQUENTLY_USED_SETTINGS" />
+
+    <!-- BugID:5606275:added by hao.liuhaolh for backup restore security -->
+    <uses-permission android:name="com.yunos.sync.manager.permission.RESTORE_APPS" />
+
+    <uses-permission android:name="com.aliyun.wireless.vos.appstore.RECOMEND_APP_LIST" />
+
+    <!-- YUNOS BEGIN -->
+    <!-- ##date:2015/4/13    ##author:suhang.sh@alibaba-inc.com -->
+    <!-- ##module:Homeshel -->
+    <!-- ##description: Fixed 5906512 -->
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <!-- YUNOS END -->
+    <!-- YUNOS BEGIN PB Added by guoshuai.lgs date:2015/04/21 -->
+    <uses-permission android:name="com.xiami.walkman.permission.broadcast" />
+    <!-- YUNOS END PB Added by guoshuai.lgs date:2015/04/21-->
+
+    <!-- YUNOS BEGIN added by chenjian.chenjian to grant Theme permission -->
+    <uses-permission android:name="com.yunos.theme.thememanager.EDIT_THEME"/>
+    <!-- YUNOS END -->
+
+    <!-- YUNOS BEGIN added by xiaodong.lxd to grant Camera permission  -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- YUNOS END -->
+    <!-- YUNOS BEGIN PB
+        added by chao.lc for disable the hide button for nav bar -->
+    <uses-permission android:name="android.permission.STATUS_BAR" />
+    <!-- YUNOS END PB -->
+
+    <uses-permission android:name="com.aliyun.homeshell.permission.USED_BY_SELF"/>
+    <uses-permission android:name="com.yunos.permission.access_profileservice" />
+
+    <application
+        android:name="com.aliyun.homeshell.LauncherApplication"
+        android:label="@string/application_name"
+        android:icon="@mipmap/ic_launcher_home"
+        android:hardwareAccelerated="true"
+        android:largeHeap="@bool/config_largeHeap"
+        android:supportsRtl="true"
+        android:backupAgent=".backuprestore.BackupAgent"
+        android:allowBackup="true"
+        android:killAfterRestore="false"
+        android:debuggable="false">
+
+        <meta-data android:name="SupportGlobalSearch"
+            android:value="true" />
+
+        <!-- added for backup restore by hongxing.whx ##BugId: 67654 -->
+        <meta-data android:name="com.aliyun.backup.api_key"
+            android:value="AEdPqrEAAAAIDaYEVgU6DJnyJdBmU7KLH3kszDXLv_4DIsEIyQ" />
+        <!-- end for backup restore -->
+        <activity
+            android:name="com.aliyun.homeshell.Launcher"
+            android:launchMode="singleTask"
+            android:clearTaskOnLaunch="true"
+            android:stateNotNeeded="true"
+            android:theme="@+style/Theme.Ali.Wallpaper.NoTitleBar"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:configChanges="mcc|mnc"
+            android:excludeFromRecents="true"
+            android:screenOrientation="fullUser">
+            <!-- use the theme below for eclipse building -->
+            <!-- android:theme="@style/Theme" -->
+            <!-- android:configChanges="auiTheme" -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.MONKEY"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.aliyun.homeshell.tools.DB2ConfigXml"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.aliyun.homeshell.setting.HomeShellSetting"
+            android:excludeFromRecents="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@+style/SettingsTheme" >
+            <meta-data android:name="AuiColor" android:value="false" />
+        </activity>
+
+        <activity
+            android:name="com.aliyun.homeshell.setting.EffectChooseActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@+style/Theme.HWDroid.Ali.WithActionBar">
+        </activity>
+
+        <activity android:name=".gadgets.OneKeyLockCreateShortcut"
+            android:icon="@drawable/lockscreen_tool"
+            android:label="@string/str_one_key_lockscreen"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".gadgets.OneKeyAccelerationCreateShortcut"
+            android:icon="@drawable/preview_clean_up"
+            android:label="@string/str_one_key_accelerate"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".gadgets.GadgetsMainActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- added for backup restore by hongxing.whx ##BugId: 67654 -->
+        <receiver android:name="com.aliyun.homeshell.backuprestore.BackupBroadcastReceiver">
+            <intent-filter>
+                <action
+                    android:name="com.aliyun.vos.wireless.appstore.restoreAppDone" />
+            </intent-filter>
+            <intent-filter >
+                <action
+                    android:name="com.aliyun.xiaoyunmi.systembackup.RestoreAllApp"/>
+            </intent-filter>
+            <intent-filter >
+                <action
+                    android:name="com.aliyun.homeshell.systembackup.RestoreAllApp"/>
+            </intent-filter>
+            <intent-filter >
+                <action
+                    android:name="com.aliyun.homeshell.restore.restart"/>
+            </intent-filter>
+        </receiver>
+        <!-- end for backup restore -->
+
+        <!-- Intent received used to prepopulate the default workspace. -->
+        <receiver
+            android:name="com.aliyun.homeshell.PreloadReceiver"
+            android:permission="com.aliyun.homeshell.permission.PRELOAD_WORKSPACE">
+            <intent-filter>
+                <action android:name="com.aliyun.homeshell.action.PRELOAD_WORKSPACE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.aliyun.homeshell.NotificationReceiver"
+            android:permission="com.aliyun.homeshell.permission.NOTIFICATION">
+            <intent-filter>
+                <action
+                    android:name="com.aliyun.action.application.notification" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_DATA_CLEARED"/>
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- Intent received used to install shortcuts from other applications -->
+        <receiver
+            android:name="com.aliyun.homeshell.InstallShortcutReceiver">
+            <intent-filter>
+                <action android:name="com.aliyun.homeshell.action.INSTALL_SHORTCUT" />
+            </intent-filter>
+            <!--YUNOS BEGIN LH-->
+            <intent-filter>
+                <action android:name="com.aliyun.homeshell.action.INSTALL_SHORTCUT" />
+                <category android:name="com.aliyun.homeshell.category.SHORTCUT_CLOUDAPP" />
+            </intent-filter>
+            <!--YUNOS END-->
+            <intent-filter>
+                <action android:name="com.android.launcher.action.INSTALL_SHORTCUT" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Intent received used to uninstall shortcuts from other applications -->
+        <receiver
+            android:name="com.aliyun.homeshell.UninstallShortcutReceiver">
+            <intent-filter>
+                <action android:name="com.aliyun.homeshell.action.UNINSTALL_SHORTCUT" />
+            </intent-filter>
+            <!--YUNOS BEGIN LH-->
+            <intent-filter>
+                <action android:name="com.aliyun.homeshell.action.UNINSTALL_SHORTCUT" />
+                <category android:name="com.aliyun.homeshell.category.SHORTCUT_CLOUDAPP" />
+            </intent-filter>
+            <!--YUNOS END-->
+            <intent-filter>
+                <action android:name="com.android.launcher.action.UNINSTALL_SHORTCUT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.aliyun.homeshell.PackageChangedReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_CHANGED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"></data>
+            </intent-filter>
+        </receiver>
+
+        <!-- daily update for app-launch data. added by zhanggong.zg -->
+        <!--<receiver android:name="com.aliyun.homeshell.smartlocate.AppLaunchUpdater" /> -->
+
+        <receiver android:name="com.aliyun.homeshell.iconupdate.IconUpdateReceiver"
+            android:permission="com.aliyun.homeshell.permission.ICON_UPTATE" >
+            <intent-filter>
+                <action android:name="com.aliyun.homeshell.action.ICON_UPDATE"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- The settings provider contains Home's data, like the workspace favorites -->
+        <provider
+            android:name="com.aliyun.homeshell.LauncherProvider"
+            android:authorities="com.aliyun.homeshell.settings"
+            android:exported="true"
+            android:writePermission="com.aliyun.homeshell.permission.WRITE_SETTINGS"
+            android:readPermission="com.aliyun.homeshell.permission.READ_SETTINGS" />
+
+        <!-- for Cloud App -->
+        <provider
+            android:name="com.aliyun.homeshell.ShortcutProvider"
+            android:authorities="com.aliyun.homeshell.shortcut"
+            android:exported="true" />
+
+        <!-- for Card -->
+        <provider
+            android:name="com.aliyun.homeshell.cardprovider.CardProvider"
+            android:authorities="com.aliyun.homeshell.card"
+            android:permission="com.aliyun.homeshell.permission.USED_BY_SELF"
+            android:exported="true" />
+
+        <meta-data android:name="android.nfc.disable_beam_default"
+                       android:value="true" />
+
+        <service android:name="com.aliyun.homeshell.utils.fingerPrintCommunication$EventNotifyService"
+            android:permission="android.permission.BIND_FP_EVENT_NOTIFY_SERVICE" >
+            <intent-filter>
+                <action android:name="com.yunos.alifinger.IEventNotifyService" />
+            </intent-filter>
+        </service>
+
+        <!-- for backup -->
+        <provider android:name="com.aliyun.homeshell.backuprestore.BackupProvider"
+            android:authorities="com.aliyun.homeshell.externalprovider"
+            android:writePermission="com.aliyun.homeshell.permission.BACKUP_WRITE"
+            android:readPermission="com.aliyun.homeshell.permission.BACKUP_READ"
+            android:grantUriPermissions="true"
+            android:exported="true" />
+
+        <!-- for smartlocate apps -->
+        <provider
+            android:name="com.aliyun.homeshell.smartlocate.SuggestedAppsProvider"
+            android:authorities="com.aliyun.homeshell.suggestedapps"
+            android:writePermission="com.aliyun.homeshell.permission.SUGGESTEDAPPS_WRITE"
+            android:readPermission="com.aliyun.homeshell.permission.SUGGESTEDAPPS_READ"
+            android:grantUriPermissions="true"
+            android:exported="true" />
+
+        <service android:name="com.aliyun.homeshell.activateapp.FootprintService"/>
+
+        <receiver android:name="com.aliyun.homeshell.activateapp.FootprintReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+                <action android:name="android.net.wifi.STATE_CHANGE"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="action.com.aliyun.homeshell.activateapp.TRIGGER_EXPIRED" />
+                <action android:name="action.com.aliyun.homeshell.activateapp.ACTIVATE_PERIODIC" />
+                <action android:name="action.com.aliyun.homeshell.activateapp.ACTIVATE_TEST" />
+            </intent-filter>
+        </receiver>
+
+      </application>
+</manifest>
